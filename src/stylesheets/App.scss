@@ -1,1 +1,15 @@
+@import "mixins.scss";
 @import "_variables.scss";
+@import "footer.scss";
+@import "form.scss";
+@import "index.scss";
+@import "navigation.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap");
+
+// font-family: 'Noto Sans JP', sans-serif;
+
+* {
+  font-family: "Noto Sans JP", sans-serif;
+}
