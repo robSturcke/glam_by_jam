@@ -1,0 +1,17 @@
+.jamie_cover_img {
+  width: 100%;
+  background: $primary;
+
+  h2 {
+    color: $alt;
+  }
+
+  a {
+    color: lighten($color: $secondary, $amount: 15%);
+
+    &:hover {
+      text-decoration: none;
+      color: $secondary;
+    }
+  }
+}

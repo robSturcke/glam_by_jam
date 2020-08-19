@@ -1,10 +1,23 @@
-nav.navbar {
-  .navbar-collapse {
-    .navbar-nav {
-      .nav-link {
-        color: $secondary;
-        font-weight: 500;
-        letter-spacing: 0.03rem;
+.nav_wrap {
+  width: 100%;
+  border-bottom: 2px solid $secondary;
+
+  nav.navbar {
+    margin: auto;
+    .navbar-collapse {
+      .navbar-nav {
+        .nav-link.active {
+          color: darken($color: $secondary, $amount: 10%) !important;
+        }
+        .nav-link {
+          color: $secondary;
+          font-weight: 500;
+          letter-spacing: 0.03rem;
+
+          &:hover {
+            color: darken($color: $secondary, $amount: 10%);
+          }
+        }
       }
     }
   }

@@ -6,12 +6,14 @@ import Logo from "./logo"
 const Header = ({ siteTitle }) => (
   <header>
     <div>
-      <div style={{ maxWidth: `300px`, marginBottom: `1rem` }}>
+      <div className="logo">
         <Logo />
       </div>
-      <h1 style={{ margin: 0 }}>
-        <Link to="/">{siteTitle}</Link>
-      </h1>
+      <div className="text-center">
+        <h1 className="site_header">
+          <Link to="/">{siteTitle}</Link>
+        </h1>
+      </div>
     </div>
   </header>
 )

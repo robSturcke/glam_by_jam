@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Glam by Jam - Jamie Lyn Makeup`,
+    title: `Glam by Jam`,
     description: `Makeup and Skincare Services for Photography, Weddings and more!`,
     author: `robSturcke`,
   },
@@ -11,6 +11,12 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: "gatsby-source-instagram",
+      options: {
+        username: `1627829848`,
       },
     },
     {

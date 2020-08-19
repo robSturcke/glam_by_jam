@@ -1,5 +1,6 @@
-@import "mixins.scss";
+@import "_mixins.scss";
 @import "_variables.scss";
+@import "about.scss";
 @import "footer.scss";
 @import "form.scss";
 @import "index.scss";
@@ -9,7 +10,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap");
 
 // font-family: 'Noto Sans JP', sans-serif;
+// font-family: 'Quicksand', sans-serif;
 
-* {
+.content {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: $alt;
   font-family: "Noto Sans JP", sans-serif;
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+header {
+  .logo {
+    display: block;
+    margin: auto;
+    max-width: 200px;
+  }
+
+  h1.site_header {
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+
+    a {
+      color: $primary;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }

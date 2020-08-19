@@ -18,20 +18,21 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="content">
       <Header siteTitle={data.site.siteMetadata.title} />
       <Navigation />
-      <div>
-        <main>{children}</main>
-        <footer>
-          <div className="text-center">
+
+      <main>{children}</main>
+      <footer>
+        <div className="text-center footer_txt">
+          <p>
             © All Rights Preserved {new Date().getFullYear()}, Built by
             {` `}
             <a href="https://www.robsturcke.dev">robSturcke</a>
-          </div>
-        </footer>
-      </div>
-    </>
+          </p>
+        </div>
+      </footer>
+    </div>
   )
 }
 

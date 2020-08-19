@@ -1,82 +1,22 @@
 import React from "react"
-import { navigateTo } from "gatsby-link"
+import Schedule from "../components/schedule"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&")
-}
-
-export default class Contact extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
-
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value })
-  }
-
-  handleSubmit = e => {
-    e.preventDefault()
-    const form = e.target
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...this.state,
-      }),
-    })
-      .then(() => navigateTo(form.getAttribute("action")))
-      .catch(error => alert(error))
-  }
-
-  render() {
-    return (
-      <div>
-        <h1>Contact</h1>
-        <form
-          name="contact"
-          method="post"
-          action="/thanks/"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={this.handleSubmit}
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <p hidden>
-            <label>
-              Don’t fill this out:{" "}
-              <input name="bot-field" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your name:
-              <br />
-              <input type="text" name="name" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your email:
-              <br />
-              <input type="email" name="email" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message:
-              <br />
-              <textarea name="message" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
+const Contact = () => (
+  <Layout>
+    <SEO title="Contact" />
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-md-6">Contact Jamie today</div>
+        <div className="col-md-6">
+          <div className="pt-5">
+            <Schedule />
+          </div>
+        </div>
       </div>
-    )
-  }
-}
+    </div>
+  </Layout>
+)
+
+export default Contact
