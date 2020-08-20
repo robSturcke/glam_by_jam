@@ -34,7 +34,6 @@ header {
   h1.site_header {
     font-size: 1.7rem;
     text-align: center;
-    font-family: "Quicksand", sans-serif;
     font-weight: 500;
 
     a {
@@ -44,5 +43,43 @@ header {
         text-decoration: none;
       }
     }
+  }
+}
+
+h1,
+h2 {
+  font-family: "Quicksand", sans-serif;
+}
+
+.content_wrap {
+  @include default_wrap;
+
+  h1 {
+    color: $secondary;
+  }
+
+  h2 {
+    color: $alt;
+  }
+}
+
+.half_wrap {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  background: $primary;
+  height: 900px;
+}
+
+.inverted {
+  h1,
+  p {
+    color: $alt;
+  }
+}
+
+@media (max-width: 768px) {
+  .half_wrap {
+    width: 100%;
   }
 }

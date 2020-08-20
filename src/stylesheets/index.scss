@@ -1,5 +1,14 @@
-.jamie_cover_img {
+.cover_wrap {
+  background: $primary;
   width: 100%;
+  border-bottom: 2px solid $secondary;
+}
+
+.jamie_cover_img {
+  display: block;
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
   background: $primary;
 
   h2 {
@@ -12,6 +21,21 @@
     &:hover {
       text-decoration: none;
       color: $secondary;
+    }
+  }
+}
+
+.insta_wrap {
+  background: $secondary;
+  width: 100%;
+
+  .insta_link {
+    color: $alt;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: none;
+      color: darken($color: $alt, $amount: 15%);
     }
   }
 }

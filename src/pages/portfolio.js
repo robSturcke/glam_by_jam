@@ -7,9 +7,11 @@ import SEO from "../components/seo"
 const Portfolio = () => (
   <Layout>
     <SEO title="Portfolio" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <div className="content_wrap">
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <Link to="/">Go back to the homepage</Link>
+    </div>
   </Layout>
 )
 

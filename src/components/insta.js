@@ -8,7 +8,6 @@ const Insta = () => {
 
   return (
     <>
-      <h2>Latest on Instagram @glam_by_jam_nj</h2>
       <div
         style={{
           display: "flex",
@@ -43,9 +42,11 @@ const Insta = () => {
           </a>
         ))}
       </div>
-      <a href={`https://instagram.com/${username}`}>
-        See more on Instagram &rarr;
-      </a>
+      <div className="mb-5">
+        <a className="insta_link" href={`https://instagram.com/${username}`}>
+          See Jamie's Latest Work on Instagram &rarr;
+        </a>
+      </div>
     </>
   )
 }

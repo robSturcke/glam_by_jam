@@ -37,12 +37,22 @@ const Navigation = () => (
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/portfolio">
+            <Link
+              activeStyle={activeStyle}
+              activeClassName="active"
+              className="nav-link"
+              to="/portfolio"
+            >
               PORTFOLIO
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/about">
+            <Link
+              activeStyle={activeStyle}
+              activeClassName="active"
+              className="nav-link"
+              to="/about"
+            >
               ABOUT
             </Link>
           </li>
