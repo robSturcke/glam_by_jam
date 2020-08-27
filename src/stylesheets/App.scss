@@ -6,11 +6,9 @@
 @import "index.scss";
 @import "navigation.scss";
 
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap");
 
 // font-family: 'Noto Sans JP', sans-serif;
-// font-family: 'Quicksand', sans-serif;
 
 .content {
   display: flex;
@@ -24,33 +22,6 @@
   }
 }
 
-header {
-  .logo {
-    display: block;
-    margin: auto;
-    max-width: 200px;
-  }
-
-  h1.site_header {
-    font-size: 1.7rem;
-    text-align: center;
-    font-weight: 500;
-
-    a {
-      color: $primary;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-}
-
-h1,
-h2 {
-  font-family: "Quicksand", sans-serif;
-}
-
 .content_wrap {
   @include default_wrap;
 
@@ -61,6 +32,14 @@ h2 {
   h2 {
     color: $alt;
   }
+}
+
+.spacer {
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 8rem;
 }
 
 .half_wrap {

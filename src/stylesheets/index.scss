@@ -7,7 +7,7 @@
 .jamie_cover_img {
   display: block;
   width: 100%;
-  max-width: 1280px;
+  // max-width: 1280px;
   margin: auto;
   background: $primary;
 
@@ -22,6 +22,17 @@
       text-decoration: none;
       color: $secondary;
     }
+  }
+}
+
+.cover_text {
+  h2,
+  h3 {
+    color: $alt;
+  }
+  button.btn.btn-link.glam_btn {
+    color: $alt;
+    border: 2px solid $alt;
   }
 }
 

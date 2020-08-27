@@ -1,13 +1,13 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
-import JamieCoverText from "./jamie_cover_text"
+import AboutBlurb from "../about_blurb"
 
-const JamieCover = ({ className }) => (
+const AboutBG = ({ className }) => (
   <StaticQuery
     query={graphql`
       query {
-        desktop: file(relativePath: { eq: "essentials/img2.jpg" }) {
+        desktop: file(relativePath: { eq: "essentials/intro.jpg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp
@@ -33,11 +33,11 @@ const JamieCover = ({ className }) => (
             // backgroundSize: "cover",
           }}
         >
-          <JamieCoverText />
+          <AboutBlurb />
         </BackgroundImage>
       )
     }}
   />
 )
 
-export default JamieCover
+export default AboutBG

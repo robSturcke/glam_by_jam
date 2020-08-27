@@ -35,6 +35,7 @@ const Insta = () => {
               style={{
                 width: "100%",
                 marginTop: 0,
+                borderRadius: "7px",
               }}
               fluid={photo.fluid}
               alt={photo.caption}

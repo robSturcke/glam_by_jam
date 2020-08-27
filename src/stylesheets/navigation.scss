@@ -1,21 +1,56 @@
-.nav_wrap {
-  width: 100%;
-  border-bottom: 2px solid $secondary;
+header {
+  .nav_wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    transition: background 0.25s ease-out;
+    width: 100%;
+    height: 175px;
+    border-bottom: 2px solid $secondary;
+    background: $secondary_opac;
 
-  nav.navbar {
-    margin: auto;
-    .navbar-collapse {
-      .navbar-nav {
-        .nav-link.active {
-          color: darken($color: $secondary, $amount: 10%) !important;
+    .logo {
+      display: block;
+      background: $alt;
+      border-radius: 50%;
+      border: 2px solid $secondary;
+      margin: 0.5rem auto 0 auto;
+      max-width: 150px;
+    }
+
+    h1.site_header {
+      font-size: 1.7rem;
+      font-weight: 500;
+
+      a {
+        color: darken($color: $alt, $amount: 15%);
+
+        &:hover {
+          text-decoration: none;
         }
-        .nav-link {
-          color: $secondary;
-          font-weight: 500;
-          letter-spacing: 0.03rem;
+      }
+    }
 
-          &:hover {
-            color: darken($color: $secondary, $amount: 10%);
+    nav.navbar {
+      margin: auto;
+      max-width: 1080px;
+      margin: 7.6rem auto 0 auto;
+
+      .navbar-collapse {
+        .navbar-nav {
+          .nav-link.active {
+            color: darken($color: $alt, $amount: 10%) !important;
+          }
+          .nav-link {
+            color: $alt;
+            font-weight: 500;
+            letter-spacing: 0.03rem;
+
+            &:hover {
+              color: darken($color: $alt, $amount: 10%);
+            }
           }
         }
       }
