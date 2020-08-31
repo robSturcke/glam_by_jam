@@ -1,9 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import JamieCover from "../components/essentials/jamie_cover"
-import Insta from "../components/insta"
-import Blurb from "../components/about_blurb"
+import JamieCover from "../components/page_layouts/jamie_cover"
 
 const IndexPage = () => (
   <Layout>
@@ -11,24 +9,7 @@ const IndexPage = () => (
     <div className="cover_wrap">
       <JamieCover />
     </div>
-    <div className="insta_wrap">
-      <div className="content_wrap">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-12">
-              <div className="py-3">
-                <h2 className="float-right">
-                  <small>Latest on Instagram </small>@glam_by_jam_nj
-                </h2>
-              </div>
-            </div>
-            <div className="col-md-12">
-              <Insta />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div className="insta_wrap"></div>
   </Layout>
 )
 

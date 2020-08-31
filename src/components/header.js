@@ -15,15 +15,12 @@ const activeStyle = {
 const Header = ({ siteTitle }) => (
   <header>
     <div className="nav_wrap">
-      <div className="logo">
-        <Logo />
+      <div className="logo_container text-center">
+        <div className="logo">
+          <Logo alt={siteTitle} />
+        </div>
       </div>
-      <div className="text-center">
-        <h1 className="site_header">
-          <Link to="/">{siteTitle}</Link>
-        </h1>
-      </div>
-      <Navbar fixed="top" expand="lg">
+      <Navbar fixed="top" expand="md">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto mr-auto">
@@ -31,7 +28,7 @@ const Header = ({ siteTitle }) => (
               <Link
                 activeStyle={activeStyle}
                 activeClassName="active"
-                className="nav-link"
+                className="nav-link underline"
                 to="/"
               >
                 HOME
@@ -41,17 +38,7 @@ const Header = ({ siteTitle }) => (
               <Link
                 activeStyle={activeStyle}
                 activeClassName="active"
-                className="nav-link"
-                to="/services"
-              >
-                SERVICES
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeStyle={activeStyle}
-                activeClassName="active"
-                className="nav-link"
+                className="nav-link underline"
                 to="/portfolio"
               >
                 PORTFOLIO
@@ -61,20 +48,20 @@ const Header = ({ siteTitle }) => (
               <Link
                 activeStyle={activeStyle}
                 activeClassName="active"
-                className="nav-link"
-                to="/about"
+                className="nav-link underline"
+                to="/contact"
               >
-                ABOUT
+                SERVICES / CONTACT
               </Link>
             </li>
             <li className="nav-item">
               <Link
                 activeStyle={activeStyle}
                 activeClassName="active"
-                className="nav-link"
-                to="/contact"
+                className="nav-link underline"
+                to="/about"
               >
-                CONTACT
+                ABOUT
               </Link>
             </li>
           </Nav>

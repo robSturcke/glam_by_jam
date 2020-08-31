@@ -35,9 +35,9 @@ export default class Schedule extends React.Component {
 
   render() {
     return (
-      <>
+      <div className="schedule_form">
         <Form
-          name="contact"
+          name="schedule"
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
@@ -85,10 +85,14 @@ export default class Schedule extends React.Component {
               <option>Bride / 100+</option>
               <option>Makeup Under Age 13 / 30</option>
               <option>Lash Application (lashes included) / 15</option>
+              <option>Adult Makeup Lessons / 85</option>
+              <option>Makeup Lessons Under Age 15 / 40</option>
+              <option>Group Bridal Inquiry</option>
+              <option>Group Event or Lessons Inquiry</option>
             </Form.Control>
           </Form.Group>
           <Form.Group controlId="contact.ControlSelect">
-            <Form.Label>Approximate Appointment Date</Form.Label>
+            <Form.Label>Approximate Date</Form.Label>
             <Form.Control
               type="date"
               name="date"
@@ -96,7 +100,7 @@ export default class Schedule extends React.Component {
             ></Form.Control>
           </Form.Group>
           <Form.Group>
-            <Form.Label>Notes/Requests</Form.Label>
+            <Form.Label>Location Notes/Requests</Form.Label>
             <Form.Control
               required
               as="textarea"
@@ -107,11 +111,13 @@ export default class Schedule extends React.Component {
           </Form.Group>
           <Form.Group>
             <div className="float-right">
-              <Button type="submit">Send</Button>
+              <Button size="lg" variant="outline-light" type="submit">
+                Send
+              </Button>
             </div>
           </Form.Group>
         </Form>
-      </>
+      </div>
     )
   }
 }

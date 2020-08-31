@@ -1,17 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import PortfolioBG from "../components/page_layouts/portfolio_bg"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Portfolio = () => (
   <Layout>
     <SEO title="Portfolio" />
-    <div className="content_wrap">
-      <h1>Hi from the second page</h1>
-      <p>Welcome to page 2</p>
-      <Link to="/">Go back to the homepage</Link>
-    </div>
+    <PortfolioBG />
   </Layout>
 )
 
