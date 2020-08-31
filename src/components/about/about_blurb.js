@@ -1,6 +1,7 @@
 import React from "react"
 import MeetJams from "./meet_jams"
 import { Link } from "gatsby"
+import Arrow from "../../images/arrow"
 
 const AboutBlurb = () => (
   <div className="content_wrap">
@@ -12,7 +13,7 @@ const AboutBlurb = () => (
           </div>
         </div>
         <div className="col-12">
-          <div className="p-4">
+          <div className="px-4">
             <MeetJams />
             <h2>Meet Your Artist</h2>
             <p>
@@ -26,7 +27,10 @@ const AboutBlurb = () => (
               occasions!
             </p>
             <p>
-              <Link to="/about">Read More About Jamie...</Link>
+              <Link to="/about">
+                Read More About Jamie
+                <Arrow baseLayer="about_icon" color0="color0" color1="color1" />
+              </Link>
             </p>
           </div>
         </div>

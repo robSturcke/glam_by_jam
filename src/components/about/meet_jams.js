@@ -7,7 +7,7 @@ const MeetJams = () => {
     query {
       placeholderImage: file(relativePath: { eq: "jamie.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -24,7 +24,7 @@ const MeetJams = () => {
         maxWidth: "200px",
         borderRadius: "7px",
         marginRight: "1rem",
-        marginTop: "1.3rem",
+        marginTop: "1rem",
       }}
       fluid={data.placeholderImage.childImageSharp.fluid}
     />

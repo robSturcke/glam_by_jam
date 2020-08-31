@@ -1,6 +1,7 @@
 import React from "react"
 import Image from "gatsby-image"
 import useInstagram from "../hooks/use-instagram"
+import Arrow from "../images/arrow"
 
 const Insta = () => {
   const instaPhotos = useInstagram()
@@ -45,7 +46,8 @@ const Insta = () => {
       </div>
       <div className="mb-5">
         <a className="insta_link" href={`https://instagram.com/${username}`}>
-          See Jamie's Latest Work on Instagram &rarr;
+          See Jamie's Latest Work on Instagram{" "}
+          <Arrow baseLayer="about_icon" color0="color0" color1="color1" />
         </a>
       </div>
     </>

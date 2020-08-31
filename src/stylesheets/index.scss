@@ -14,8 +14,20 @@
   button {
     font-weight: 700;
     background-color: $secondary_opac;
-    &:hover {
-      color: $secondary;
+    &:hover,
+    &:active {
+      color: $secondary !important;
     }
+  }
+}
+
+.about_icon {
+  margin: auto;
+  max-width: 30px;
+  .color0 {
+    fill: $alt;
+  }
+  .color1 {
+    fill: darken($color: $alt, $amount: 15%);
   }
 }

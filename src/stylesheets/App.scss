@@ -32,11 +32,6 @@
     color: $alt;
   }
 
-  button.btn.btn-link.glam_btn {
-    color: $alt;
-    border: 2px solid $alt;
-  }
-
   a,
   a.insta_link {
     color: $alt;
@@ -45,6 +40,15 @@
     &:hover {
       text-decoration: none;
       color: darken($color: $alt, $amount: 15%);
+
+      .about_icon {
+        .color0 {
+          fill: darken($color: $alt, $amount: 15%);
+        }
+        .color1 {
+          fill: darken($color: $alt, $amount: 5%);
+        }
+      }
     }
   }
 }
@@ -52,25 +56,4 @@
 .spacer {
   margin-top: 10rem;
   width: 100%;
-}
-
-.half_wrap {
-  position: absolute;
-  left: 0;
-  width: 50%;
-  background: $primary;
-  height: 900px;
-}
-
-.inverted {
-  h1,
-  p {
-    color: $alt;
-  }
-}
-
-@media (max-width: 768px) {
-  .half_wrap {
-    width: 100%;
-  }
 }
