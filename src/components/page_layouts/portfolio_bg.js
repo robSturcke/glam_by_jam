@@ -11,6 +11,7 @@ import PortImg6 from "../../images/portfolio/port_img6"
 import PortImg7 from "../../images/portfolio/port_img7"
 import PortImg8 from "../../images/portfolio/port_img8"
 import Insta from "../insta"
+import PortImg9 from "../../images/portfolio/port_img9"
 
 const PortfolioBG = ({ className }) => (
   <StaticQuery
@@ -43,33 +44,37 @@ const PortfolioBG = ({ className }) => (
         >
           <InnerContainers>
             <div className="col-md-4">
-              <PortImg1 />
-            </div>
-            <div className="col-md-4">
-              <PortImg4 />
-            </div>
-            <div className="col-md-4">
               <PortImg2 />
             </div>
             <div className="col-md-4">
               <PortImg3 />
             </div>
             <div className="col-md-4">
-              <PortImg5 />
+              <PortImg4 />
+            </div>
+            <div className="col-md-4">
+              <PortImg9 />
+            </div>
+            <div className="col-md-4">
+              <PortImg8 />
+            </div>
+            <div className="col-md-4">
+              <PortImg1 />
             </div>
             <div className="col-md-4">
               <PortImg6 />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-4">
               <PortImg7 />
             </div>
-            <div className="col-md-6">
-              <PortImg8 />
+            <div className="col-md-4">
+              <PortImg5 />
             </div>
+
             <div className="col-12">
               <h2 className="pt-3">View More of Jamie's Latest work!</h2>
+              <Insta />
             </div>
-            <Insta />
           </InnerContainers>
         </BackgroundImage>
       )

@@ -3,14 +3,14 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Modal } from "react-bootstrap"
 
-const PortImg1 = () => {
+const PortImg9 = () => {
   const [show, setShow] = useState(false)
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
 
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "portfolio/port_img1.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "portfolio/port_img9.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -35,4 +35,4 @@ const PortImg1 = () => {
   )
 }
 
-export default PortImg1
+export default PortImg9

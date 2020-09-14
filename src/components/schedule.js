@@ -80,6 +80,8 @@ export default class Schedule extends React.Component {
           <Form.Group controlId="contact.ControlSelect">
             <Form.Label>Desired Service</Form.Label>
             <Form.Control as="select">
+              <option>Group Bridal Inquiry</option>
+              <option>Group Event or Lessons Inquiry</option>
               <option>Brows / 25</option>
               <option>Event Makeup / 75</option>
               <option>Bride / 100+</option>
@@ -87,8 +89,6 @@ export default class Schedule extends React.Component {
               <option>Lash Application (lashes included) / 15</option>
               <option>Adult Makeup Lessons / 85</option>
               <option>Makeup Lessons Under Age 15 / 40</option>
-              <option>Group Bridal Inquiry</option>
-              <option>Group Event or Lessons Inquiry</option>
             </Form.Control>
           </Form.Group>
           <Form.Group controlId="contact.ControlSelect">
@@ -112,7 +112,7 @@ export default class Schedule extends React.Component {
           <Form.Group>
             <div className="float-right">
               <Button size="lg" variant="outline-light" type="submit">
-                Send
+                Schedule Me!
               </Button>
             </div>
           </Form.Group>

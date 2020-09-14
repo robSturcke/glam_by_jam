@@ -6,6 +6,7 @@
 @import "form.scss";
 @import "index.scss";
 @import "navigation.scss";
+@import "portfolio.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap");
 
@@ -36,18 +37,14 @@
   a.insta_link {
     color: $alt;
     font-weight: 500;
+    fill: $alt;
 
     &:hover {
       text-decoration: none;
       color: darken($color: $alt, $amount: 15%);
 
       .about_icon {
-        .color0 {
-          fill: darken($color: $alt, $amount: 15%);
-        }
-        .color1 {
-          fill: darken($color: $alt, $amount: 5%);
-        }
+        fill: darken($color: $alt, $amount: 15%);
       }
     }
   }

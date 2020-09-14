@@ -25,9 +25,9 @@ const PortImg3 = () => {
       <div onClick={handleShow}>
         <Img fluid={data.placeholderImage.childImageSharp.fluid} />
       </div>
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose} size="lg">
         <Modal.Header closeButton></Modal.Header>
-        <Modal.Body closeButton>
+        <Modal.Body>
           <Img fluid={data.placeholderImage.childImageSharp.fluid} />
         </Modal.Body>
       </Modal>

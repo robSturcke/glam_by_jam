@@ -11,11 +11,13 @@ const JamieCoverText = () => (
           <h1 className="pb-5">Glam by Jam</h1>
           <h3 className="pt-3 pb-2">Luxury Makeup For</h3>
           <h2 className="pb-4">Bridal Events, Photography and Film</h2>
-          <Link to="/contact">
-            <Button size="lg" variant="outline-light">
-              SCHEDULE TODAY
-            </Button>
-          </Link>
+          <div className="pt-5">
+            <Link to="/contact">
+              <Button size="lg" variant="outline-light">
+                SCHEDULE TODAY
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

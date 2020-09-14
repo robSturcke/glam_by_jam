@@ -15,7 +15,7 @@ const AboutBlurb = () => (
         <div className="col-12">
           <div className="px-4">
             <MeetJams />
-            <h2>Meet Your Artist</h2>
+            <h2 className="py-2">Meet Your Artist</h2>
             <p>
               With over a decade of experience under her belt, Jamie has been
               helping clients create their perfect makeup vision come to life.
@@ -26,12 +26,18 @@ const AboutBlurb = () => (
               fully customized makeup artistry experience for any and all
               occasions!
             </p>
-            <p>
-              <Link to="/about">
-                Read More About Jamie
-                <Arrow baseLayer="about_icon" color0="color0" color1="color1" />
-              </Link>
-            </p>
+            <div className="pt-5">
+              <p className="text-right">
+                <Link to="/about">
+                  Read More About Jamie
+                  <Arrow
+                    baseLayer="about_icon"
+                    color0="color0"
+                    color1="color1"
+                  />
+                </Link>
+              </p>
+            </div>
           </div>
         </div>
         <div className="col-12">
