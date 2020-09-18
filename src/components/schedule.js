@@ -81,15 +81,24 @@ export default class Schedule extends React.Component {
           <Form.Group controlId="service">
             <Form.Label>Desired Service</Form.Label>
             <Form.Control name="service" as="select">
-              <option>Bride Inquiry</option>
-              <option>Group Bridal Inquiry</option>
-              <option>Group Event or Lessons Inquiry</option>
-              <option>Brows / 25</option>
-              <option>Event Makeup / 75</option>
-              <option>Makeup Under Age 13 / 30</option>
-              <option>Lash Application (lashes included) / 15</option>
-              <option>Adult Makeup Lessons / 85</option>
-              <option>Makeup Lessons Under Age 15 / 40</option>
+              <option value="Bride Inquiry">Bride Inquiry</option>
+              <option value="Group Bridal Inquiry">Group Bridal Inquiry</option>
+              <option value="Group Event">Group Event</option>
+              <option value="Brows">Brows / 25</option>
+              <option value="Event Makeup">Event Makeup / 75</option>
+              <option value="Makeup Under Age 13">
+                Makeup Under Age 13 / 30
+              </option>
+              <option value="Lash Application">
+                Lash Application (lashes included) / 15
+              </option>
+              <option value="Lesson Inquiry">Lesson Inquiry</option>
+              <option value="Adult Makeup Lessons">
+                Adult Makeup Lessons / 85
+              </option>
+              <option value="Makeup Lessons Under Age 15">
+                Makeup Lessons Under Age 15 / 40
+              </option>
             </Form.Control>
           </Form.Group>
           <Form.Group controlId="date">
