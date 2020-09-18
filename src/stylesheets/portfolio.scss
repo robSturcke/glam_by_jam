@@ -1,0 +1,24 @@
+.modal-backdrop.show {
+  opacity: 0.9;
+}
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0);
+
+  .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+
+    button.close {
+      &:focus {
+        border-color: $secondary;
+        box-shadow: 0px 1px 1px $secondary inset, 0px 0px 8px $secondary_opac;
+        outline-color: $secondary_opac;
+      }
+      span {
+        color: $alt;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
