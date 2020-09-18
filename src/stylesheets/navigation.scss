@@ -45,8 +45,9 @@ header {
       background-color: $primary;
 
       button.navbar-toggler {
+        &:active,
         &:focus {
-          outline-color: $primary_opac;
+          outline-color: $secondary;
         }
 
         .icon {
