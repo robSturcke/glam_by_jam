@@ -18,7 +18,7 @@ const Services = () => (
           Event Makeup <span>/</span> <strong>75</strong>
         </ListGroup.Item>
         <ListGroup.Item>
-          Bride <span>/</span> <strong>100+</strong>
+          Bride <span>/</span> <strong>Inquire</strong>
         </ListGroup.Item>
         <ListGroup.Item>
           Makeup Under Age 13 <span>/</span> <strong>30</strong>

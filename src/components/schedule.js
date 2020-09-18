@@ -48,15 +48,9 @@ export default class Schedule extends React.Component {
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          action="/thanks/"
+          action="/submitted/"
           onSubmit={this.handleSubmit}
         >
-          <p hidden>
-            <label>
-              Don’t fill this out:{" "}
-              <input name="bot-field" onChange={this.handleChange} />
-            </label>
-          </p>
           <Form.Group>
             <Form.Label>Full Name</Form.Label>
             <Form.Control
@@ -84,21 +78,21 @@ export default class Schedule extends React.Component {
               onChange={this.handleChange}
             />
           </Form.Group>
-          <Form.Group controlId="contact.ControlSelect">
+          <Form.Group controlId="service">
             <Form.Label>Desired Service</Form.Label>
-            <Form.Control as="select">
+            <Form.Control name="service" as="select">
+              <option>Bride Inquiry</option>
               <option>Group Bridal Inquiry</option>
               <option>Group Event or Lessons Inquiry</option>
               <option>Brows / 25</option>
               <option>Event Makeup / 75</option>
-              <option>Bride / 100+</option>
               <option>Makeup Under Age 13 / 30</option>
               <option>Lash Application (lashes included) / 15</option>
               <option>Adult Makeup Lessons / 85</option>
               <option>Makeup Lessons Under Age 15 / 40</option>
             </Form.Control>
           </Form.Group>
-          <Form.Group controlId="contact.ControlSelect">
+          <Form.Group controlId="date">
             <Form.Label>Approximate Date</Form.Label>
             <Form.Control
               type="date"
@@ -124,7 +118,7 @@ export default class Schedule extends React.Component {
                 onChange={this.handleRecaptcha}
               />
             </Form.Group>
-            <div className="float-right">
+            <div className="mb-5 float-right">
               <Button size="lg" variant="outline-light" type="submit">
                 Schedule Me!
               </Button>

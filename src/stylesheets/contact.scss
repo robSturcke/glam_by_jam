@@ -42,11 +42,6 @@
         span {
           color: darken($color: $alt, $amount: 25%);
         }
-
-        &:hover {
-          color: lighten($color: $secondary, $amount: 15%);
-          background-color: $primary_opac;
-        }
       }
     }
     .card-body {
