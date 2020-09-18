@@ -41,7 +41,18 @@ header {
     nav.navbar {
       margin: auto;
       max-width: 1080px;
-      margin: 4.9rem auto 0 auto;
+      margin: 4.5rem auto 0 auto;
+
+      button.navbar-toggler {
+        &:focus {
+          outline-color: $primary_opac;
+        }
+
+        .icon {
+          width: 32px;
+          fill: $alt;
+        }
+      }
 
       .navbar-collapse {
         .navbar-nav {

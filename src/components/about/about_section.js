@@ -53,10 +53,14 @@ const AboutSection = () => (
         </h3>
       </div>
       <div className="col-6">
-        <JamieCert1 />
+        <div className="pb-3">
+          <JamieCert1 />
+        </div>
       </div>
       <div className="col-6">
-        <JamieCert2 />
+        <div className="pb-3">
+          <JamieCert2 />
+        </div>
       </div>
     </InnerContainers>
   </span>

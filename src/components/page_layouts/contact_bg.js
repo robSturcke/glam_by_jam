@@ -44,10 +44,14 @@ const ContactBG = ({ className }) => (
               </div>
             </div>
             <div className="col-md-6">
-              <Services />
+              <div className="my-3">
+                <Services />
+              </div>
             </div>
             <div className="col-md-6">
-              <Schedule />
+              <div className="my-3">
+                <Schedule />
+              </div>
             </div>
           </InnerContainers>
         </BackgroundImage>
