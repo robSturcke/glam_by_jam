@@ -1,12 +1,15 @@
 import React from "react"
 import { Form, Button } from "react-bootstrap"
 import { navigateTo } from "gatsby-link"
+import Recaptcha from "react-google-recaptcha"
 
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&")
 }
+
+const RECAPTCHA_KEY = process.env.GATSBY_SITE_KEY
 
 export default class Schedule extends React.Component {
   constructor(props) {
@@ -16,6 +19,10 @@ export default class Schedule extends React.Component {
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
+  }
+
+  handleRecaptcha = value => {
+    this.setState({ "g-recaptcha-response": value })
   }
 
   handleSubmit = e => {
@@ -110,6 +117,13 @@ export default class Schedule extends React.Component {
             />
           </Form.Group>
           <Form.Group>
+            <Form.Group>
+              <Recaptcha
+                ref="recaptcha"
+                sitekey={RECAPTCHA_KEY}
+                onChange={this.handleRecaptcha}
+              />
+            </Form.Group>
             <div className="float-right">
               <Button size="lg" variant="outline-light" type="submit">
                 Schedule Me!

@@ -22,7 +22,7 @@ const PortImg8 = () => {
 
   return (
     <>
-      <div onClick={handleShow}>
+      <div className="py-3" onClick={handleShow}>
         <Img fluid={data.placeholderImage.childImageSharp.fluid} />
       </div>
       <Modal show={show} onHide={handleClose} size="lg">
