@@ -7,7 +7,7 @@ import Navigation from "./nav"
 const Header = ({ siteTitle }) => (
   <header>
     <div className="nav_wrap">
-      <div className="logo_container text-center">
+      <div className="text-center">
         <div className="logo">
           <Logo alt={siteTitle} />
         </div>

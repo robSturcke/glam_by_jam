@@ -39,11 +39,15 @@
     font-weight: 500;
     fill: $alt;
 
+    .insta_icon {
+      width: 35px;
+    }
+
     &:hover {
       text-decoration: none;
       color: darken($color: $alt, $amount: 15%);
 
-      .about_icon {
+      .insta_icon {
         fill: darken($color: $alt, $amount: 15%);
       }
     }

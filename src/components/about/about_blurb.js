@@ -21,13 +21,12 @@ const AboutBlurb = () => (
           </p>
           <p>
             Her specialties include but aren't limited to: luxury makeup for
-            Bridal, events, photography and film. She'd love to help deliver a
-            fully customized makeup artistry experience for any and all
-            occasions!
+            Bridal, events, photography and film. She'd love to deliver a fully
+            customized makeup artistry experience for any and all occasions!
           </p>
           <div className="pt-5">
             <p className="text-right">
-              <Link to="/about">
+              <Link to="/about" className="about_link">
                 Read More About Jamie
                 <Arrow baseLayer="about_icon" color0="color0" color1="color1" />
               </Link>

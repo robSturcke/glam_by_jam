@@ -1,14 +1,11 @@
 import React from "react"
 import { Card, ListGroup } from "react-bootstrap"
-import Lips from "../images/lips"
 
 const Services = () => (
   <>
     <Card>
       <Card.Header>
-        <h2>
-          <Lips baseLayer="icon" /> Services
-        </h2>
+        <h2>Services</h2>
       </Card.Header>
       <ListGroup variant="flush">
         <ListGroup.Item>
@@ -36,9 +33,7 @@ const Services = () => (
       </ListGroup>
       <Card.Body>
         <Card.Text>
-          <small>
-            <Lips baseLayer="icon" /> Ask About Group Lessons and Group Pricing
-          </small>
+          <small>Ask About Group Lessons and Group Pricing</small>
         </Card.Text>
       </Card.Body>
     </Card>

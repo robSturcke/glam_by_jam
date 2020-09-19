@@ -48,7 +48,7 @@ const Insta = () => {
       <div className="mb-5">
         <p>
           <a className="insta_link" href={`https://instagram.com/${username}`}>
-            <LogoInstagram baseLayer="about_icon" color0="color0" /> See Jamie's
+            <LogoInstagram baseLayer="insta_icon" color0="color0" /> See Jamie's
             Latest Makeup Work!
           </a>
         </p>
