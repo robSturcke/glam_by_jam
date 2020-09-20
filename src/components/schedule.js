@@ -80,7 +80,11 @@ export default class Schedule extends React.Component {
           </Form.Group>
           <Form.Group controlId="service">
             <Form.Label>Desired Service</Form.Label>
-            <Form.Control name="service" as="select">
+            <Form.Control
+              name="service"
+              as="select"
+              onChange={this.handleChange}
+            >
               <option value="bride-inquiry">Bride Inquiry</option>
               <option value="group-bridal-inquiry">Group Bridal Inquiry</option>
               <option value="group-event">Group Event</option>
