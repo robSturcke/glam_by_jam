@@ -5,13 +5,15 @@ import LogoInstagram from "../images/logo_instagram"
 
 const Insta = () => {
   const instaPhotos = useInstagram()
-  const { username } = instaPhotos[0]
 
   return (
     <>
       <div className="mb-3">
         <p>
-          <a className="insta_link" href={`https://instagram.com/${username}`}>
+          <a
+            className="insta_link"
+            href={`https://instagram.com/glam_by_jam_nj`}
+          >
             <LogoInstagram baseLayer="insta_icon" color0="color0" /> See Jamie's
             Latest Makeup Work!
           </a>
