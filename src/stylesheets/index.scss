@@ -24,7 +24,7 @@
 .about_link {
   .about_icon {
     margin: auto;
-    max-width: 30px;
+    width: 30px;
     .color0 {
       fill: $alt;
     }
@@ -35,7 +35,12 @@
 
   &:hover {
     .about_icon {
-      fill: darken($color: $alt, $amount: 15%);
+      .color0 {
+        fill: darken($color: $alt, $amount: 15%);
+      }
+      .color1 {
+        fill: darken($color: $alt, $amount: 25%);
+      }
     }
   }
 }

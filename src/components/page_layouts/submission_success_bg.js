@@ -1,7 +1,8 @@
 import React from "react"
-import { graphql, StaticQuery } from "gatsby"
+import { graphql, Link, StaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import InnerContainers from "../inner_containers"
+import Arrow from "../../images/arrow"
 
 const SubmissionSuccessBG = ({ className }) => (
   <StaticQuery
@@ -33,7 +34,22 @@ const SubmissionSuccessBG = ({ className }) => (
           }}
         >
           <InnerContainers>
-            <h1 className="text-center">Success!</h1>
+            <div className="col-12">
+              <div className="text-center py-3">
+                <h1>Success!</h1>
+                <h2>Jamie will be in contact shortly!</h2>
+              </div>
+              <div className="py-3 text-center">
+                <Link className="about_link" to="/">
+                  <Arrow
+                    baseLayer="about_icon"
+                    color0="color0"
+                    color1="color1"
+                  />{" "}
+                  Back Home
+                </Link>
+              </div>
+            </div>
           </InnerContainers>
         </BackgroundImage>
       )

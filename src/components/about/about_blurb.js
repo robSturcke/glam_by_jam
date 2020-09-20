@@ -27,8 +27,8 @@ const AboutBlurb = () => (
           <div className="pt-3">
             <p className="text-right">
               <Link to="/about" className="about_link">
-                Read More About Jamie
                 <Arrow baseLayer="about_icon" color0="color0" color1="color1" />
+                Read More About Jamie
               </Link>
             </p>
           </div>
