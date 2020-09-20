@@ -70,12 +70,10 @@ const PortfolioBG = ({ className }) => (
             <div className="col-md-4">
               <PortImg5 />
             </div>
-
             <div className="col-12">
               <div className="py-3">
                 <div className="border-bottom" />
               </div>
-              <h2 className="pt-3">View More of Jamie's Latest work!</h2>
               <Insta />
             </div>
           </InnerContainers>

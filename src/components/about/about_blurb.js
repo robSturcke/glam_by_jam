@@ -24,7 +24,7 @@ const AboutBlurb = () => (
             Bridal, events, photography and film. She'd love to deliver a fully
             customized makeup artistry experience for any and all occasions!
           </p>
-          <div className="pt-5">
+          <div className="pt-3">
             <p className="text-right">
               <Link to="/about" className="about_link">
                 Read More About Jamie
@@ -34,7 +34,7 @@ const AboutBlurb = () => (
           </div>
         </div>
         <div className="col-12">
-          <div className="py-3 my-3">
+          <div className="py-3">
             <div className="border-bottom" />
           </div>
         </div>

@@ -9,7 +9,16 @@ const Insta = () => {
 
   return (
     <>
+      <div className="mb-3">
+        <p>
+          <a className="insta_link" href={`https://instagram.com/${username}`}>
+            <LogoInstagram baseLayer="insta_icon" color0="color0" /> See Jamie's
+            Latest Makeup Work!
+          </a>
+        </p>
+      </div>
       <div
+        className="pb-5"
         style={{
           display: "flex",
           flexWrap: "wrap",
@@ -43,15 +52,6 @@ const Insta = () => {
             />
           </a>
         ))}
-      </div>
-
-      <div className="mb-5">
-        <p>
-          <a className="insta_link" href={`https://instagram.com/${username}`}>
-            <LogoInstagram baseLayer="insta_icon" color0="color0" /> See Jamie's
-            Latest Makeup Work!
-          </a>
-        </p>
       </div>
     </>
   )

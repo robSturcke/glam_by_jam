@@ -40,13 +40,6 @@ const JamieCover = ({ className }) => (
           <div className="content_wrap">
             <div className="container-fluid">
               <div className="row">
-                <div className="col-12">
-                  <div className="py-3">
-                    <h2 className="insta_header float-right">
-                      <small>Latest on Instagram </small>@glam_by_jam_nj
-                    </h2>
-                  </div>
-                </div>
                 <div className="col-md-12">
                   <Insta />
                 </div>
