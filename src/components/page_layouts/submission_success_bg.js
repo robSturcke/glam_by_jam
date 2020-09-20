@@ -32,7 +32,9 @@ const SubmissionSuccessBG = ({ className }) => (
             backgroundRepeat: "none",
           }}
         >
-          <InnerContainers>Success!</InnerContainers>
+          <InnerContainers>
+            <h1 className="text-center">Success!</h1>
+          </InnerContainers>
         </BackgroundImage>
       )
     }}
