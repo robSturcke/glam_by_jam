@@ -85,20 +85,22 @@ export default class Schedule extends React.Component {
               as="select"
               onChange={this.handleChange}
             >
-              <option value="bride-inquiry">Bride Inquiry</option>
-              <option value="group-bridal-inquiry">Group Bridal Inquiry</option>
-              <option value="group-event">Group Event</option>
-              <option value="brows">Brows / 25</option>
-              <option value="event">Event Makeup / 75</option>
-              <option value="makeup-child">Makeup Under Age 13 / 30</option>
-              <option value="lash-application">
+              <option value="Bride Inquiry">Bride Inquiry</option>
+              <option value="Group Bridal Inquiry">Group Bridal Inquiry</option>
+              <option value="Group Event">Group Event</option>
+              <option value="Brows">Brows / 25</option>
+              <option value="Event Makeup">Event Makeup / 75</option>
+              <option value="Makeup Under Age 13">
+                Makeup Under Age 13 / 30
+              </option>
+              <option value="Lash Application">
                 Lash Application (lashes included) / 15
               </option>
-              <option value="lesson-inquiry">Lesson Inquiry</option>
-              <option value="adult-makeup-lessons">
+              <option value="Group Lesson Inquiry">Group Lesson Inquiry</option>
+              <option value="Adult Makeup Lessons">
                 Adult Makeup Lessons / 85
               </option>
-              <option value="child-makeup-lessons">
+              <option value="Makeup Lessons Under Age 15">
                 Makeup Lessons Under Age 15 / 40
               </option>
             </Form.Control>
