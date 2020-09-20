@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import AboutBG from "../components/page_layouts/about_bg"
+import SubmissionSuccessBG from "../components/page_layouts/submission_success_bg"
 
 const Submitted = () => (
   <Layout>
-    <SEO title="About" />
-    <AboutBG />
+    <SEO title="Success! Your submission has been sent!" />
+    <SubmissionSuccessBG />
   </Layout>
 )
 

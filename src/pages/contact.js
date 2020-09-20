@@ -5,7 +5,7 @@ import ContactBG from "../components/page_layouts/contact_bg"
 
 const Contact = () => (
   <Layout>
-    <SEO title="Contact" />
+    <SEO title="Contact or Schedule a Makeup Appointment" />
     <ContactBG />
   </Layout>
 )

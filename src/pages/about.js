@@ -5,7 +5,7 @@ import AboutBG from "../components/page_layouts/about_bg"
 
 const About = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="About Jamie" />
     <AboutBG />
   </Layout>
 )
