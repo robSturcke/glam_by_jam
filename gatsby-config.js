@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Glam by Jam`,
-    description: `Makeup and Skincare Services for Photography, Weddings and more!`,
+    description: `Luxury Makeup For Bridal Events, Photography and Film in the greater NYC area.`,
     author: `robSturcke`,
   },
   plugins: [
@@ -36,11 +36,8 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/jamieLogo.png`, // This path is relative to the root of the site.
+        icon: `src/images/jamieLogo.png`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
