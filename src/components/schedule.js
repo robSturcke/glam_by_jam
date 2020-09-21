@@ -124,13 +124,13 @@ export default class Schedule extends React.Component {
             />
           </Form.Group>
           <Form.Group>
-            <Form.Group>
-              <Recaptcha
-                ref="recaptcha"
-                sitekey={RECAPTCHA_KEY}
-                onChange={this.handleRecaptcha}
-              />
-            </Form.Group>
+            <Recaptcha
+              ref="recaptcha"
+              sitekey={RECAPTCHA_KEY}
+              onChange={this.handleRecaptcha}
+            />
+          </Form.Group>
+          <Form.Group>
             <div className="mb-5 float-right">
               <Button size="lg" variant="outline-light" type="submit">
                 Schedule Me!
