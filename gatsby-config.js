@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Glam by Jam`,
-    description: `Luxury Makeup For Bridal Events, Photography and Film in the greater NYC area.`,
+    description: `Luxury Makeup For Bridal, Events, Photography and Film in the greater NYC area.`,
     author: `robSturcke`,
   },
   plugins: [
