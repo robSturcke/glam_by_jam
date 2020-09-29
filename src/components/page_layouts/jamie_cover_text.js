@@ -10,7 +10,7 @@ const JamieCoverText = () => (
           <div className="spacer" />
           <h1 className="py-3">Glam by Jam</h1>
           <h3 className="pt-3 pb-2">Luxury Makeup For</h3>
-          <h2 className="pb-3">Bridal Events, Photography and Film</h2>
+          <h2 className="pb-3">Bridal, Events, Photography and Film</h2>
           <div className="pt-3">
             <Link to="/contact">
               <Button size="lg" variant="outline-light">
