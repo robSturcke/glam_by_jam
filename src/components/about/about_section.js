@@ -31,7 +31,7 @@ const AboutSection = () => (
           </p>
           <p>
             Her specialties include but aren't limited to: luxury makeup for
-            Bridal, events, photography and film. She'd love to help deliver a
+            Bridal, Events, Photography and Film. She'd love to help deliver a
             fully customized makeup artistry experience for any and all
             occasions!
           </p>
