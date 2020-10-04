@@ -11,35 +11,50 @@ const Services = () => (
         <ListGroup.Item>
           Bride <span>/</span>{" "}
           <strong>
-            <i>Inquire</i>
+            <i>Consultation</i>
+          </strong>
+        </ListGroup.Item>
+        <ListGroup.Item>
+          Group Bridal <span>/</span>{" "}
+          <strong>
+            <i>Consultation</i>
+          </strong>
+        </ListGroup.Item>
+
+        <ListGroup.Item>
+          Event Makeup <span>/</span> <strong>100</strong>
+        </ListGroup.Item>
+        <ListGroup.Item>
+          Group Event <span>/</span>{" "}
+          <strong>
+            <i>Consultaion</i>
           </strong>
         </ListGroup.Item>
         <ListGroup.Item>
           Brows <span>/</span> <strong>25</strong>
         </ListGroup.Item>
         <ListGroup.Item>
-          Event Makeup <span>/</span> <strong>75</strong>
-        </ListGroup.Item>
-        <ListGroup.Item>
-          Makeup Under Age 13 <span>/</span> <strong>30</strong>
-        </ListGroup.Item>
-        <ListGroup.Item>
           Lash Application{" "}
           <small>
             <i>(lashes included)</i>
           </small>{" "}
-          <span>/</span> <strong>15</strong>
+          <span>/</span> <strong>25</strong>
         </ListGroup.Item>
         <ListGroup.Item>
-          Adult Makeup Lessons <span>/</span> <strong>85</strong>
+          Makeup Lesson <span>/</span> <strong>100</strong>
         </ListGroup.Item>
         <ListGroup.Item>
-          Makeup Lessons Under Age 15 <span>/</span> <strong>40</strong>
+          Group Lesson <span>/</span>{" "}
+          <strong>
+            <i>Consultaion</i>
+          </strong>
         </ListGroup.Item>
       </ListGroup>
       <Card.Body>
         <Card.Text>
-          <small>Ask About Group Lessons and Group Pricing</small>
+          <small>
+            <i>Ask About Group Lessons and Group Pricing</i>
+          </small>
         </Card.Text>
       </Card.Body>
     </Card>
