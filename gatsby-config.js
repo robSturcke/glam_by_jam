@@ -24,17 +24,12 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-instagram",
-      options: {
-        username: `1627829848`,
-      },
-    },
-    {
       resolve: "gatsby-plugin-sass",
       options: {
         useResolveUrlLoader: true,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

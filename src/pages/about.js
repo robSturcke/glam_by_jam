@@ -1,11 +1,13 @@
 import React from "react"
 import SEO from "../components/seo"
 import MeetYourArtist from "../images/MeetYourArtistText.svg"
-import Portrait from "../images/jamie.jpg"
+import Portrait from "../images/about/portrait"
+import JamieCert1 from "../images/about/jamie_cert1"
+import JamieCert2 from "../images/about/jamie_cert2"
 
 const About = () => (
   <>
-    <SEO title="About Jamie" />
+    <SEO title="About" />
     <div className="primary_wrap">
       <div className="container-fluid">
         <div className="row">
@@ -13,7 +15,7 @@ const About = () => (
             <img src={MeetYourArtist} />
           </div>
           <div className="col-sm-4">
-            <img src={Portrait} className="img-fluid" />
+            <Portrait />
           </div>
           <div className="col-sm-8">
             <p>
@@ -38,6 +40,22 @@ const About = () => (
               fully customized makeup artistry experience for any and all
               occasions!
             </p>
+          </div>
+          <div className="col-md-12">
+            <h3 className="py-3">
+              COVID19 Certified
+              <div className="border-bottom" />
+            </h3>
+          </div>
+          <div className="col-sm-6">
+            <div className="text-center pb-3">
+              <JamieCert1 />
+            </div>
+          </div>
+          <div className="col-sm-6">
+            <div className="text-center pb-3">
+              <JamieCert2 />
+            </div>
           </div>
         </div>
       </div>

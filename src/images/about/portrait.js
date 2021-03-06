@@ -1,15 +1,16 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-const JamieCert2 = () => (
+const Portrait = () => (
   <StaticImage
-    src="jamie_cert2.png"
+    src="jamie.jpg"
     placeholder="blurred"
     alt="Certification"
     layout="constrained"
-    width={350}
-    height={248}
+    width={400}
+    height={500}
+    className="portrait"
   />
 )
 
-export default JamieCert2
+export default Portrait

@@ -20,7 +20,6 @@ const Services = () => (
             <i>Consultation</i>
           </strong>
         </ListGroup.Item>
-
         <ListGroup.Item>
           Event Makeup <span>/</span> <strong>100</strong>
         </ListGroup.Item>

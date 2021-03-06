@@ -53,7 +53,7 @@ export default function Navigation() {
                 activeStyle={activeStyle}
                 activeClassName="active"
                 className="nav-link"
-                to="/about"
+                to="/services"
               >
                 SERVICES
               </Link>

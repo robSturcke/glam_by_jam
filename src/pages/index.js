@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HelloIntro from "../images/Hello_Text.svg"
 import HomeBrush from "../images/Home_WatercolorLineBrush.svg"
@@ -14,9 +13,11 @@ const IndexPage = () => (
             <div className="text-center py-3">
               <img src={HelloIntro} width="400" />
               <h1>
-                <span>LUXURY MAKEUP FOR</span>
+                <span className="myriad">LUXURY MAKEUP FOR</span>
                 <br />
-                <span>BRIDAL, EVENTS, PHOTOGRAPHY {"&"} Film</span>
+                <span className="lux">
+                  BRIDAL, EVENTS, PHOTOGRAPHY {"&"} Film
+                </span>
               </h1>
               <p>
                 With over a decade of experience under her belt, Jamie has been
