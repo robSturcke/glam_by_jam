@@ -18,7 +18,7 @@ export default function Navigation() {
 
   return (
     <>
-      <Navbar fixed="top" expand="md">
+      <Navbar expand="md">
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleClick}>
           {onToggle ? (
             <CloseIcon baseLayer="icon" />
@@ -43,19 +43,9 @@ export default function Navigation() {
                 activeStyle={activeStyle}
                 activeClassName="active"
                 className="nav-link underline"
-                to="/portfolio"
+                to="/about"
               >
-                PORTFOLIO
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeStyle={activeStyle}
-                activeClassName="active"
-                className="nav-link underline"
-                to="/contact"
-              >
-                SERVICES / CONTACT
+                ABOUT
               </Link>
             </li>
             <li className="nav-item">
@@ -65,7 +55,27 @@ export default function Navigation() {
                 className="nav-link underline"
                 to="/about"
               >
-                ABOUT
+                SERVICES
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeStyle={activeStyle}
+                activeClassName="active"
+                className="nav-link underline"
+                to="/portfolio"
+              >
+                GALLERY
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeStyle={activeStyle}
+                activeClassName="active"
+                className="nav-link underline"
+                to="/contact"
+              >
+                CONTACT
               </Link>
             </li>
           </Nav>

@@ -1,8 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Logo from "./logo"
 import Navigation from "./nav"
 import { Link } from "gatsby"
+import Logo from "../images/glambyjam_logo.svg"
 
 const Header = ({ siteTitle }) => (
   <header>
@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
       <div className="text-center">
         <div className="logo">
           <Link to="/">
-            <Logo alt={siteTitle} />
+            <img src={Logo} className="logo" alt="Glam by Jam" />
           </Link>
         </div>
       </div>
