@@ -969,6 +969,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.12.5":
+  version "7.13.9"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.9.tgz#97dbe2116e2630c489f22e0656decd60aaa1fcee"
+  integrity sha512-aY2kU+xgJ3dJ1eU6FMB9EH8dIe8dmusF1xEku52joLvw6eAFN0AI+WxCLDnpev2LEejWBAy2sBvBOBAjI3zmvA==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/standalone@^7.10.2":
   version "7.11.3"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.11.3.tgz#043e6ff3b12226e41ed2013418b9a4c055d9c21e"
@@ -6497,6 +6504,13 @@ gatsby-plugin-google-analytics@^2.4.0:
   dependencies:
     "@babel/runtime" "^7.11.2"
     minimatch "3.0.4"
+
+gatsby-plugin-layout@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-2.0.0.tgz#aa5ab40e2a9bf78009115cff79a40f6d29cb6bc5"
+  integrity sha512-dFuQ/h6Z1TiZrHwil1HaqyE0sDKpfPEC6XLiCgRqq1Ud0y8lS6DI8qUk4MRI3B1rq6kXakrkimN8bR/mmHo+jA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
 
 gatsby-plugin-manifest@^2.4.22:
   version "2.4.23"

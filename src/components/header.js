@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
   <header>
     <div className="nav_wrap">
       <div className="text-center">
-        <div className="logo">
+        <div className="logo py-3">
           <Link to="/">
             <img src={Logo} className="logo" alt="Glam by Jam" />
           </Link>

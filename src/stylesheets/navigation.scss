@@ -1,0 +1,15 @@
+nav {
+  .navbar-collapse {
+    .navbar-nav {
+      .nav-item {
+        a.nav-link {
+          color: $alt;
+
+          &:hover {
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 @import "_mixins.scss";
 @import "_variables.scss";
 @import "footer.scss";
+@import "navigation.scss";
 @import url("https://use.typekit.net/sad2atg.css");
 
 // font-family: myriad-pro, sans-serif;
@@ -47,12 +48,9 @@
   }
 }
 
-h1 {
-  @font-face {
-    font-family: "ELEPHNT";
-    src: url("https://cdn.jsdelivr.net/gh/robSturcke/glam_by_jam/src/fonts/Amsterdam Signature Italic.ttf")
-      format("truetype");
-  }
+.primary_wrap {
+  background-color: $primary;
+  width: 100%;
 }
 
 .content_wrap {

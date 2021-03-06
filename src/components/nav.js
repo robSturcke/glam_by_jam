@@ -9,7 +9,7 @@ const isActive = ({ isPartiallyCurrent }) => {
 }
 
 const activeStyle = {
-  color: "rgb(225, 225, 225)",
+  color: "rgb(68, 165, 123)",
 }
 
 export default function Navigation() {
@@ -32,7 +32,7 @@ export default function Navigation() {
               <Link
                 activeStyle={activeStyle}
                 activeClassName="active"
-                className="nav-link underline"
+                className="nav-link"
                 to="/"
               >
                 HOME
@@ -42,7 +42,7 @@ export default function Navigation() {
               <Link
                 activeStyle={activeStyle}
                 activeClassName="active"
-                className="nav-link underline"
+                className="nav-link"
                 to="/about"
               >
                 ABOUT
@@ -52,7 +52,7 @@ export default function Navigation() {
               <Link
                 activeStyle={activeStyle}
                 activeClassName="active"
-                className="nav-link underline"
+                className="nav-link"
                 to="/about"
               >
                 SERVICES
@@ -62,7 +62,7 @@ export default function Navigation() {
               <Link
                 activeStyle={activeStyle}
                 activeClassName="active"
-                className="nav-link underline"
+                className="nav-link"
                 to="/portfolio"
               >
                 GALLERY
@@ -72,7 +72,7 @@ export default function Navigation() {
               <Link
                 activeStyle={activeStyle}
                 activeClassName="active"
-                className="nav-link underline"
+                className="nav-link"
                 to="/contact"
               >
                 CONTACT

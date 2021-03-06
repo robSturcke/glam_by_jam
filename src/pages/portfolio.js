@@ -1,11 +1,11 @@
 import React from "react"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Portfolio = () => (
-  <Layout>
+  <>
     <SEO title="Jamie's Portfolio" />
-  </Layout>
+    <p>Portfolio</p>
+  </>
 )
 
 export default Portfolio
