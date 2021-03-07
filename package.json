@@ -7,7 +7,6 @@
   "dependencies": {
     "bootstrap": "^4.5.2",
     "gatsby": "^3.0.3",
-    "gatsby-image": "^3.0.0",
     "gatsby-plugin-google-analytics": "^3.0.0",
     "gatsby-plugin-image": "^1.0.0",
     "gatsby-plugin-layout": "^2.0.0",

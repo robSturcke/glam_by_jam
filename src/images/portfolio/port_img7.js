@@ -1,6 +1,5 @@
 import React, { useState } from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
 import { Modal } from "react-bootstrap"
 
 const PortImg7 = () => {
@@ -8,27 +7,29 @@ const PortImg7 = () => {
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
 
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "portfolio/port_img7.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <>
       <div className="py-3" onClick={handleShow}>
-        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+        <StaticImage
+          src="port_img1.jpg"
+          placeholder="blurred"
+          alt="Certification"
+          layout="fullWidth"
+          width={350}
+          height={248}
+        />
       </div>
       <Modal show={show} onHide={handleClose} size="lg">
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
-          <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+          <StaticImage
+            src="port_img1.jpg"
+            placeholder="blurred"
+            alt="Certification"
+            layout="fullWidth"
+            width={350}
+            height={248}
+          />
         </Modal.Body>
       </Modal>
     </>

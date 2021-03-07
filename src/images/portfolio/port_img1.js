@@ -14,7 +14,7 @@ const PortImg1 = () => {
           src="port_img1.jpg"
           placeholder="blurred"
           alt="Certification"
-          layout="constrained"
+          layout="fullWidth"
           width={350}
           height={248}
         />
