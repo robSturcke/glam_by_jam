@@ -30,11 +30,18 @@ const Services = () => (
         <div className="col-8">
           <div className="row">
             <div className="col-6">
-              <BridalIcon icon="img-fluid services_icon" filler="filler" />
-              On location bridal services for you and your bridal party. As a
-              bride-to-be, you can be confident knowing we will help create your
-              perfect wedding makeup and I accommodate small to large bridal
-              parties.
+              <div class="card mb-3">
+                <div class="card-body">
+                  <BridalIcon icon="img-fluid services_icon" filler="filler" />
+                  <h5 class="card-title">Bridal</h5>
+                  <p class="card-text">
+                    On location bridal services for you and your bridal party.
+                    As a bride-to-be, you can be confident knowing we will help
+                    create your perfect wedding makeup and I accommodate small
+                    to large bridal parties.
+                  </p>
+                </div>
+              </div>
             </div>
             <div className="col-6">
               <EventIcon />
