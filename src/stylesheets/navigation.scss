@@ -1,5 +1,10 @@
 nav {
   .navbar-toggler {
+    border: 1px solid $secondary;
+    &:active,
+    &:focus {
+      outline-color: $secondary;
+    }
     .icon {
       width: 35px;
       height: 35px;
@@ -11,6 +16,7 @@ nav {
       .nav-item {
         a.nav-link {
           color: $alt;
+          font-weight: 600;
 
           &:hover {
             color: $secondary;

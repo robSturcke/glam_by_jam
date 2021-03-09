@@ -11,24 +11,21 @@ const PortImg2 = () => {
     <>
       <div className="py-3" onClick={handleShow}>
         <StaticImage
-          src="port_img1.jpg"
+          src="port_img2.jpg"
           placeholder="blurred"
           alt="Certification"
           layout="fullWidth"
           width={350}
-          height={248}
         />
       </div>
       <Modal show={show} onHide={handleClose} size="lg">
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
           <StaticImage
-            src="port_img1.jpg"
+            src="port_img2.jpg"
             placeholder="blurred"
             alt="Certification"
             layout="fullWidth"
-            width={350}
-            height={248}
           />
         </Modal.Body>
       </Modal>

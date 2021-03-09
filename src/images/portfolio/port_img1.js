@@ -15,8 +15,6 @@ const PortImg1 = () => {
           placeholder="blurred"
           alt="Certification"
           layout="fullWidth"
-          width={350}
-          height={248}
         />
       </div>
       <Modal show={show} onHide={handleClose} size="lg">
@@ -27,8 +25,6 @@ const PortImg1 = () => {
             placeholder="blurred"
             alt="Certification"
             layout="constrained"
-            width={350}
-            height={248}
           />
         </Modal.Body>
       </Modal>

@@ -1,0 +1,23 @@
+.services_img {
+  display: block;
+  margin: auto;
+}
+.watercolor {
+  margin-top: 5rem;
+  margin-left: -2rem;
+  width: 110%;
+}
+.services_icon {
+  max-width: 100px;
+  margin-top: -1rem;
+  margin-left: -1rem;
+  .filler {
+    fill: #ffffff;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .services_watercolor {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
