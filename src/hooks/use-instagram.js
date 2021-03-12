@@ -1,31 +1,30 @@
-// import { graphql, useStaticQuery } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
-// const useInstagram = () => {
-//   const data = useStaticQuery(graphql`
-//     query {
-//       allInstaNode(limit: 18) {
-//         node {
-//           id
-//           caption
-//           username
-//           localFile {
-//             childImageSharp {
-//               fluid(maxWidth: 120, maxHeight: 120) {
-//                 ...GatsbyImageSharpFluid_withWebp
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   `)
+const useInstagram = () => {
+  const data = useStaticQuery(graphql`
+    {
+      instagram: allInstaNode(
+        sort: { fields: timestamp, order: DESC }
+        limit: 18
+      ) {
+        nodes {
+          caption
+          id
+          timestamp
+          likes
+          localFile {
+            childImageSharp {
+              fluid(quality: 100, maxWidth: 120, maxHeight: 120) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
 
-//   return data.allInstaNode.nodes.map(node => ({
-//     ...node.localFile.childImageSharp,
-//     id: node.id,
-//     caption: node.caption,
-//     username: node.username,
-//   }))
-// }
+  return data.instagram.nodes
+}
 
-// export default useInstagram
+export default useInstagram
