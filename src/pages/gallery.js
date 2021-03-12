@@ -4,6 +4,8 @@ import PortImg1 from "../images/portfolio/port_img1"
 import PortImg2 from "../images/portfolio/port_img2"
 import WaterColor from "../images/WatercolorLine.svg"
 import GalleryText from "../images/Gallery_Text.svg"
+import BridalGallery from "../components/gallery/bridal"
+import PhotoshootsGallery from "../components/gallery/photoshoots"
 
 const Portfolio = () => (
   <>
@@ -22,15 +24,17 @@ const Portfolio = () => (
             <div className="col-md-8">
               <img src={WaterColor} className="img-fluid watercolor" />
             </div>
+            <div className="col-md-12">
+              <h3>BRIDAL</h3>
+            </div>
           </div>
+          <BridalGallery />
           <div className="row">
-            <div className="col-md-6">
-              <PortImg1 />
-            </div>
-            <div className="col-md-6">
-              <PortImg2 />
+            <div className="col-md-12">
+              <h3>PHOTOSHOOTS</h3>
             </div>
           </div>
+          <PhotoshootsGallery />
         </div>
       </div>
     </div>

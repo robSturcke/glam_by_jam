@@ -1,4 +1,5 @@
 import React from "react"
+import Insta from "../components/insta"
 import SEO from "../components/seo"
 import HelloIntro from "../images/Hello_Text.svg"
 import HomeBrush from "../images/Home_WatercolorLineBrush.svg"
@@ -39,6 +40,7 @@ const IndexPage = () => (
                 <img src={HomeBrush} alt="Brush" className="home_brush" />
               </div>
             </div>
+            <Insta />
           </div>
         </div>
       </div>

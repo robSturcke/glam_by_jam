@@ -63,7 +63,7 @@ export default function Navigation() {
                 activeStyle={activeStyle}
                 activeClassName="active"
                 className="nav-link"
-                to="/portfolio"
+                to="/gallery"
               >
                 GALLERY
               </Link>

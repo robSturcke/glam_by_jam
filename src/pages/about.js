@@ -24,7 +24,7 @@ const About = () => (
               </div>
             </div>
             <div className="col-sm-4">
-              <div className="p-1">
+              <div className="p-1 text-center">
                 <Portrait />
               </div>
             </div>
@@ -60,7 +60,7 @@ const About = () => (
       <div className="content_wrap">
         <div className="row">
           <div className="col-md-12">
-            <div className="text-center">
+            <div className="pt-3 text-center">
               <img
                 src={WaterColor}
                 width="1080"

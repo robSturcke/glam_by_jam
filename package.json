@@ -7,6 +7,7 @@
   "dependencies": {
     "bootstrap": "^4.5.2",
     "gatsby": "^3.0.3",
+    "gatsby-image": "^3.0.0",
     "gatsby-plugin-google-analytics": "^3.0.0",
     "gatsby-plugin-image": "^1.0.0",
     "gatsby-plugin-layout": "^2.0.0",
@@ -16,7 +17,7 @@
     "gatsby-plugin-sass": "^4.0.2",
     "gatsby-plugin-sharp": "^3.0.0",
     "gatsby-source-filesystem": "^3.0.0",
-    "gatsby-source-instagram-all": "^3.0.4",
+    "gatsby-source-instagram": "^0.9.0",
     "gatsby-transformer-sharp": "^3.0.0",
     "node-sass": "^5.0.0",
     "prop-types": "^15.7.2",
