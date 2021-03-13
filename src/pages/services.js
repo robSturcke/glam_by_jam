@@ -41,14 +41,16 @@ const Services = () => (
                         filler="filler"
                       />
                     </h3>
-                    <div className="card-text">
+                    <div className="card-text pb-3">
                       On location bridal services for you and your bridal party.
                       As a bride-to-be, you can be confident knowing we will
                       help create your perfect wedding makeup and I accommodate
                       small to large bridal parties.
                     </div>
                     <div className="mt-auto">
-                      <span>SCHEDULE A CONSULATION</span>
+                      <span className="card_footer">
+                        SCHEDULE A CONSULATION
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -59,7 +61,7 @@ const Services = () => (
                     <h3 className="card-title">
                       Event Makeup <EventIcon />
                     </h3>
-                    <div className="card-text">
+                    <div className="card-text pb-3">
                       Look flawless for any event, from proms to photoshoots or
                       a special night out! Jamie will consult with you about
                       your custom look for any event or occasion.
@@ -80,13 +82,13 @@ const Services = () => (
                         filler="filler"
                       />
                     </h3>
-                    <div className="card-text">
+                    <div className="card-text pb-3">
                       Makeup should be fun and effortless. Jamie will teach you
                       how to create wearable looks - whether you natural glam
                       for the day or a smokey eye to impress.
                     </div>
                     <div className="mt-auto">
-                      <span>$100</span>
+                      <span className="card_footer">$100</span>
                     </div>
                   </div>
                 </div>
@@ -97,14 +99,14 @@ const Services = () => (
                     <h3 className="card-title">
                       Brows <BrowsIcon />
                     </h3>
-                    <div className="card-text">
+                    <div className="card-text pb-3">
                       Jamie creates looks that are uniquely tailored to your
                       facial features and taste. Jamie focuses on your
                       individual bone structure to create the best brows for
                       YOUR face.
                     </div>
                     <div className="mt-auto">
-                      <span>$25</span>
+                      <span className="card_footer">$25</span>
                     </div>
                   </div>
                 </div>

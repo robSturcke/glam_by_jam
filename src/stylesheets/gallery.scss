@@ -6,7 +6,15 @@ h3 {
 }
 
 .gallery_img {
+  margin: auto;
   @include bordered;
+}
+
+.gallery_img.horiz {
+  max-height: 220px;
+}
+.gallery_img.vert {
+  max-height: 440px;
 }
 
 .modal-backdrop.show {
@@ -22,12 +30,12 @@ h3 {
 
     button.close {
       &:focus {
-        border-color: $secondary;
-        box-shadow: 0px 1px 1px $secondary inset, 0px 0px 8px $primary;
+        border-color: $background;
+        box-shadow: 0px 1px 1px $background inset, 0px 0px 8px $primary;
         outline-color: $primary;
       }
       span {
-        color: $secondary;
+        color: $background;
         font-size: 2.5rem;
       }
     }

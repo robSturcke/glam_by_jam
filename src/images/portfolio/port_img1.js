@@ -15,7 +15,7 @@ const PortImg1 = () => {
           placeholder="blurred"
           alt="Certification"
           layout="fullWidth"
-          className="gallery_img"
+          className="gallery_img horiz"
         />
       </div>
       <Modal show={show} onHide={handleClose} size="lg">
@@ -25,7 +25,7 @@ const PortImg1 = () => {
             src="port_img1.jpg"
             placeholder="blurred"
             alt="Certification"
-            layout="constrained"
+            layout="fullWidth"
           />
         </Modal.Body>
       </Modal>
