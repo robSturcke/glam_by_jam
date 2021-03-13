@@ -1,5 +1,4 @@
 import React from "react"
-// Too many css classes to map
 import EventMakeupIcon from "./ServiceEventMakeupIcon.svg"
 
 const EventIcon = () => (

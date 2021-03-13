@@ -14,10 +14,14 @@
 .card {
   h3 {
     @include didoni;
+    margin-bottom: 0rem;
   }
 
   .card_footer {
     color: $secondary;
     font-size: 1.3rem;
+    @include myriad;
+    font-size: 1.5rem;
+    margin-top: 3rem;
   }
 }

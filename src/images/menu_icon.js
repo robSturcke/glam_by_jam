@@ -1,10 +1,10 @@
 import React from "react"
 
-export default function MenuIcon(props) {
+export default function MenuIcon({ baseLayer }) {
   return (
     <svg
       version="1.1"
-      className={props.baseLayer}
+      className={baseLayer}
       x="0px"
       y="0px"
       viewBox="0 0 512 512"

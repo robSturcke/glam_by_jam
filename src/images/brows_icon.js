@@ -1,5 +1,4 @@
 import React from "react"
-// Too many css classes to map
 import ServiceBrowsIcon from "./Service_Brows_Icon.svg"
 
 const BrowsIcon = () => (
