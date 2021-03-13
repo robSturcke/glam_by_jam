@@ -15,8 +15,7 @@ const PortImg6 = () => {
           placeholder="blurred"
           alt="Certification"
           layout="fullWidth"
-          width={350}
-          height={248}
+          className="gallery_img"
         />
       </div>
       <Modal show={show} onHide={handleClose} size="lg">

@@ -33,7 +33,7 @@ const Services = () => (
             <div className="row">
               <div className="col-md-6 mb-4">
                 <div className="card h-100">
-                  <div className="card-body">
+                  <div className="card-body d-flex flex-column">
                     <h3 className="card-title">
                       Bridal{" "}
                       <BridalIcon
@@ -47,13 +47,15 @@ const Services = () => (
                       help create your perfect wedding makeup and I accommodate
                       small to large bridal parties.
                     </div>
-                    <span>SCHEDULE A CONSULATION</span>
+                    <div className="mt-auto">
+                      <span>SCHEDULE A CONSULATION</span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-6 mb-4">
                 <div className="card mb-3 h-100">
-                  <div className="card-body">
+                  <div className="card-body d-flex flex-column">
                     <h3 className="card-title">
                       Event Makeup <EventIcon />
                     </h3>
@@ -62,13 +64,15 @@ const Services = () => (
                       a special night out! Jamie will consult with you about
                       your custom look for any event or occasion.
                     </div>
-                    <span>$100</span>
+                    <div className="mt-auto">
+                      <span className="card_footer">$100</span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-6 mb-4">
                 <div className="card h-100">
-                  <div className="card-body">
+                  <div className="card-body d-flex flex-column">
                     <h3 className="card-title">
                       Makeup Lessons{" "}
                       <LessonIcon
@@ -81,13 +85,15 @@ const Services = () => (
                       how to create wearable looks - whether you natural glam
                       for the day or a smokey eye to impress.
                     </div>
-                    <span>$100</span>
+                    <div className="mt-auto">
+                      <span>$100</span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-6 mb-4">
                 <div className="card h-100">
-                  <div className="card-body">
+                  <div className="card-body d-flex flex-column">
                     <h3 className="card-title">
                       Brows <BrowsIcon />
                     </h3>
@@ -97,7 +103,9 @@ const Services = () => (
                       individual bone structure to create the best brows for
                       YOUR face.
                     </div>
-                    <span>$25</span>
+                    <div className="mt-auto">
+                      <span>$25</span>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -5,6 +5,10 @@ h3 {
   letter-spacing: 0.03rem;
 }
 
+.gallery_img {
+  @include bordered;
+}
+
 .modal-backdrop.show {
   opacity: 0.9;
 }

@@ -2,11 +2,6 @@
   display: block;
   margin: auto;
 }
-.watercolor {
-  margin-top: 4.7rem;
-  margin-left: -2rem;
-  width: 110%;
-}
 .services_icon {
   float: right;
   max-width: 100px;
@@ -20,11 +15,9 @@
   h3 {
     @include didoni;
   }
-}
 
-@media only screen and (max-width: 768px) {
-  .services_watercolor {
-    margin-top: 0;
-    margin-left: 0;
+  .card_footer {
+    color: $secondary;
+    font-size: 1.3rem;
   }
 }

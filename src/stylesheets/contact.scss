@@ -1,0 +1,11 @@
+.schedule_form {
+  @include bordered;
+  background-color: $primary;
+  max-width: 600px;
+  margin: auto;
+  padding: 1.3rem 1rem;
+
+  label {
+    font-weight: 600;
+  }
+}

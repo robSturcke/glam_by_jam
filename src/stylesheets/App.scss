@@ -1,16 +1,13 @@
 @import "_mixins.scss";
 @import "_variables.scss";
 @import "about.scss";
+@import "contact.scss";
 @import "footer.scss";
 @import "gallery.scss";
 @import "index.scss";
 @import "navigation.scss";
 @import "services.scss";
 @import url("https://use.typekit.net/sad2atg.css");
-
-// font-family: myriad-pro, sans-serif;
-// font-weight: 700;
-// font-style: normal;
 
 // Myriad Pro Italic
 
@@ -19,14 +16,6 @@
 // font-weight: 400;
 
 // font-style: italic;
-
-// Myriad Pro Regular
-
-// font-family: myriad-pro, sans-serif;
-
-// font-weight: 400;
-
-// font-style: normal;
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
 
@@ -46,18 +35,6 @@
 .primary_wrap {
   background-color: $primary;
   width: 100%;
-}
-
-.schedule_form {
-  @include bordered;
-  background-color: $primary;
-  max-width: 600px;
-  margin: auto;
-  padding: 1.3rem 1rem;
-
-  label {
-    font-weight: 600;
-  }
 }
 
 .content_wrap {
@@ -94,4 +71,17 @@
   max-width: 350px;
   width: 100%;
   height: inherit;
+}
+
+.watercolor {
+  margin-top: 4.7rem;
+  margin-left: -2rem;
+  width: 110%;
+}
+
+@media only screen and (max-width: 768px) {
+  .watercolor {
+    margin-top: 0;
+    margin-left: 0;
+  }
 }
