@@ -7,9 +7,9 @@ const Insta = () => {
   const instaPhotos = useInstagram()
 
   return (
-    <>
-      <div className="mb-3">
-        <p>
+    <div className="col-12">
+      <div className="mt-3">
+        <span>
           <a
             className="insta_link"
             href={`https://instagram.com/glam_by_jam_nj`}
@@ -17,15 +17,15 @@ const Insta = () => {
             <LogoInstagram baseLayer="insta_icon" color0="color0" /> See Jamie's
             Latest Makeup Work!
           </a>
-        </p>
+        </span>
       </div>
       <div
-        className="pb-5"
+        className="mb-5"
         style={{
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "space-between",
-          margin: "1rem -0.5rem",
+          margin: "0rem -0.5rem",
           padding: "0.5rem 0",
         }}
       >
@@ -48,13 +48,15 @@ const Insta = () => {
               style={{
                 width: "100%",
                 marginTop: 0,
-                borderRadius: "7px",
+                borderTopLeftRadius: "27px",
+                borderTopRightRadius: "27px",
+                borderBottomRightRadius: "27px",
               }}
             />
           </a>
         ))}
       </div>
-    </>
+    </div>
   )
 }
 

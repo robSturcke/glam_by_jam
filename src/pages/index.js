@@ -23,7 +23,7 @@ const IndexPage = () => (
                   <span className="myriad">LUXURY MAKEUP FOR</span>
                   <br />
                   <span className="lux">
-                    BRIDAL, EVENTS, PHOTOGRAPHY {"&"} Film
+                    BRIDAL, EVENTS, PHOTOGRAPHY {"&"} FILM
                   </span>
                 </h1>
                 <p>
@@ -40,8 +40,14 @@ const IndexPage = () => (
                 <img src={HomeBrush} alt="Brush" className="home_brush" />
               </div>
             </div>
-            <Insta />
           </div>
+        </div>
+      </div>
+    </div>
+    <div className="container-fluid">
+      <div className="content_wrap">
+        <div className="row">
+          <Insta />
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 
 const Contact = () => (
   <>
-    <SEO title="Contact or Schedule a Makeup Appointment" />
+    <SEO title="Schedule a Makeup Appointment" />
     <Schedule />
   </>
 )

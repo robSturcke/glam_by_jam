@@ -75,13 +75,17 @@
 
     &:hover {
       text-decoration: none;
-      color: darken($color: $alt, $amount: 15%);
+      color: $secondary;
 
       .insta_icon {
-        fill: darken($color: $alt, $amount: 15%);
+        fill: $secondary;
       }
     }
   }
+}
+
+.small_wrap {
+  @include small_wrap;
 }
 
 .logo {

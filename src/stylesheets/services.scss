@@ -16,6 +16,12 @@
     fill: #ffffff;
   }
 }
+.card {
+  h3 {
+    @include didoni;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .services_watercolor {
     margin-top: 0;

@@ -4,6 +4,12 @@
   max-width: 1280px;
 }
 
+@mixin small_wrap {
+  display: block;
+  margin: auto;
+  max-width: 800px;
+}
+
 @mixin bordered {
   border-top-left-radius: 27px;
   border-top-right-radius: 27px;

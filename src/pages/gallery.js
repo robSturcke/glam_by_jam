@@ -4,12 +4,10 @@ import PortImg1 from "../images/portfolio/port_img1"
 import PortImg2 from "../images/portfolio/port_img2"
 import WaterColor from "../images/WatercolorLine.svg"
 import GalleryText from "../images/Gallery_Text.svg"
-import BridalGallery from "../components/gallery/bridal"
-import PhotoshootsGallery from "../components/gallery/photoshoots"
 
 const Portfolio = () => (
   <>
-    <SEO title="Jamie's Portfolio" />
+    <SEO title="Gallery" />
     <div className="primary_wrap">
       <div className="container-fluid">
         <div className="content_wrap">
@@ -28,13 +26,13 @@ const Portfolio = () => (
               <h3>BRIDAL</h3>
             </div>
           </div>
-          <BridalGallery />
+          <PortImg2 />
           <div className="row">
             <div className="col-md-12">
               <h3>PHOTOSHOOTS</h3>
             </div>
           </div>
-          <PhotoshootsGallery />
+          <PortImg1 />
         </div>
       </div>
     </div>
