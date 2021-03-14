@@ -6,6 +6,7 @@ import LessonIcon from "../images/lessons_icon"
 import EventIcon from "../images/event_icon"
 import BrowsIcon from "../images/brows_icon"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
 
 const Services = () => (
   <>
@@ -49,7 +50,7 @@ const Services = () => (
                     </div>
                     <div className="mt-auto">
                       <span className="card_footer">
-                        SCHEDULE A CONSULATION
+                        <Link to="/contact">SCHEDULE A CONSULATION</Link>
                       </span>
                     </div>
                   </div>
@@ -67,7 +68,9 @@ const Services = () => (
                       your custom look for any event or occasion.
                     </div>
                     <div className="mt-auto">
-                      <span className="card_footer">$100</span>
+                      <span className="card_footer">
+                        <Link to="/contact">$100</Link>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -88,7 +91,9 @@ const Services = () => (
                       for the day or a smokey eye to impress.
                     </div>
                     <div className="mt-auto">
-                      <span className="card_footer">$100</span>
+                      <span className="card_footer">
+                        <Link to="/contact">$100</Link>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -106,7 +111,9 @@ const Services = () => (
                       YOUR face.
                     </div>
                     <div className="mt-auto">
-                      <span className="card_footer">$25</span>
+                      <span className="card_footer">
+                        <Link to="/contact">$25</Link>
+                      </span>
                     </div>
                   </div>
                 </div>

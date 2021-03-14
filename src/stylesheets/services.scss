@@ -18,10 +18,15 @@
   }
 
   .card_footer {
-    color: $secondary;
-    font-size: 1.3rem;
+    font-size: 1rem;
     @include myriad;
     font-size: 1.5rem;
     margin-top: 3rem;
+    a {
+      color: $secondary;
+      &:hover {
+        color: darken($color: $secondary, $amount: 5%);
+      }
+    }
   }
 }
