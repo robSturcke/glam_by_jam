@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Navigation from "./nav"
 import { Link } from "gatsby"
-import Logo from "../images/glambyjam_logo.svg"
+import Logo from "../images/logo"
 
 const Header = ({ siteTitle }) => (
   <>
@@ -10,8 +10,8 @@ const Header = ({ siteTitle }) => (
       <div className="nav_wrap">
         <div className="text-center">
           <div className="logo pt-3">
-            <Link to="/">
-              <img src={Logo} className="logo" alt={siteTitle} />
+            <Link to="/" alt={siteTitle}>
+              <Logo baseLayer="logo" />
             </Link>
           </div>
         </div>
