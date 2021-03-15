@@ -73,12 +73,12 @@ const About = () => (
             <h2 className="py-3">Certifications</h2>
           </div>
           <div className="col-sm-6">
-            <div className="text-center pb-3">
+            <div className="text-center mb-3">
               <JamieCert1 />
             </div>
           </div>
           <div className="col-sm-6">
-            <div className="text-center pb-3">
+            <div className="text-center mb-3">
               <JamieCert2 />
             </div>
           </div>

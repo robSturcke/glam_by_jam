@@ -47,7 +47,10 @@ const IndexPage = () => (
     <div className="container-fluid">
       <div className="content_wrap">
         <div className="row">
-          <Insta />
+          <Insta
+            text="See Jamie's
+            Latest Makeup Work!"
+          />
         </div>
       </div>
     </div>

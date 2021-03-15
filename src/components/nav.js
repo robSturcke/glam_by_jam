@@ -18,7 +18,7 @@ export default function Navigation() {
 
   return (
     <>
-      <Navbar expand="md">
+      <Navbar collapseOnSelect expand="sm">
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleClick}>
           {onToggle ? (
             <CloseIcon baseLayer="icon" />
@@ -38,7 +38,7 @@ export default function Navigation() {
                 HOME
               </Link>
             </li>
-            <li className="nav-item">
+            <li eventkey="2" className="nav-item">
               <Link
                 activeStyle={activeStyle}
                 activeClassName="active"

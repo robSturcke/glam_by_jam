@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import useInstagram from "../hooks/use-instagram"
 import LogoInstagram from "../images/logo_instagram"
 
-const Insta = () => {
+const Insta = ({ text }) => {
   const instaPhotos = useInstagram()
 
   return (
@@ -14,8 +14,9 @@ const Insta = () => {
             className="insta_link"
             href={`https://instagram.com/glam_by_jam_nj`}
           >
-            <LogoInstagram baseLayer="insta_icon" color0="color0" /> See Jamie's
-            Latest Makeup Work!
+            <LogoInstagram baseLayer="insta_icon" color0="color0" /> {text}
+            {/* See Jamie's
+            Latest Makeup Work! */}
           </a>
         </span>
       </div>

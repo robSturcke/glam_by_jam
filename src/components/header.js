@@ -5,18 +5,20 @@ import { Link } from "gatsby"
 import Logo from "../images/glambyjam_logo.svg"
 
 const Header = ({ siteTitle }) => (
-  <header>
-    <div className="nav_wrap">
-      <div className="text-center">
-        <div className="logo pt-3">
-          <Link to="/">
-            <img src={Logo} className="logo" alt="Glam by Jam" />
-          </Link>
+  <>
+    <header>
+      <div className="nav_wrap">
+        <div className="text-center">
+          <div className="logo pt-3">
+            <Link to="/">
+              <img src={Logo} className="logo" alt={siteTitle} />
+            </Link>
+          </div>
         </div>
       </div>
-      <Navigation />
-    </div>
-  </header>
+    </header>
+    <Navigation />
+  </>
 )
 
 Header.propTypes = {
