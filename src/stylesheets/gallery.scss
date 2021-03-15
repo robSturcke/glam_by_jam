@@ -1,0 +1,43 @@
+h3 {
+  font-family: didoni-urw, serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.03rem;
+}
+
+.gallery_img {
+  margin: auto;
+  @include bordered;
+}
+
+.gallery_img.horiz {
+  max-height: 220px;
+}
+.gallery_img.vert {
+  max-height: 440px;
+}
+
+.modal-backdrop.show {
+  opacity: 0.9;
+}
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0);
+
+  .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+
+    button.close {
+      &:focus {
+        border-color: $background;
+        box-shadow: 0px 1px 1px $background inset, 0px 0px 8px $primary;
+        outline-color: $primary;
+      }
+      span {
+        color: $background;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

@@ -1,13 +1,12 @@
 footer {
   background: $primary;
   color: $alt;
-  border-top: 2px solid $secondary;
 
   .footer_txt {
     margin: 3.5rem auto 5.5rem auto;
 
     a {
-      color: lighten($color: $secondary, $amount: 15%);
+      color: $secondary;
       font-weight: 500;
     }
   }

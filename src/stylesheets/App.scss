@@ -3,19 +3,19 @@
 @import "about.scss";
 @import "contact.scss";
 @import "footer.scss";
-@import "form.scss";
+@import "gallery.scss";
 @import "index.scss";
 @import "navigation.scss";
-@import "portfolio.scss";
-
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap");
+@import "services.scss";
+@import url("https://use.typekit.net/sad2atg.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
 
 .content {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background: $alt;
-  font-family: "Noto Sans JP", sans-serif;
+  background: $background;
+  font-family: "Open Sans", sans-serif;
   letter-spacing: 0.03rem;
 
   main {
@@ -23,15 +23,13 @@
   }
 }
 
+.primary_wrap {
+  background-color: $primary;
+  width: 100%;
+}
+
 .content_wrap {
   @include default_wrap;
-
-  h1,
-  h2,
-  h3,
-  p {
-    color: $alt;
-  }
 
   a,
   a.insta_link {
@@ -45,16 +43,36 @@
 
     &:hover {
       text-decoration: none;
-      color: darken($color: $alt, $amount: 15%);
+      color: $secondary;
 
       .insta_icon {
-        fill: darken($color: $alt, $amount: 15%);
+        fill: $secondary;
       }
     }
   }
 }
 
-.spacer {
-  margin-top: 8.5rem;
+.small_wrap {
+  @include small_wrap;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  max-width: 350px;
   width: 100%;
+  height: inherit;
+}
+
+.watercolor {
+  margin-top: 4.7rem;
+  margin-left: -2rem;
+  width: 110%;
+}
+
+@media only screen and (max-width: 768px) {
+  .watercolor {
+    margin-top: 0;
+    margin-left: 0;
+  }
 }

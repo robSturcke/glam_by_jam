@@ -9,7 +9,7 @@ const isActive = ({ isPartiallyCurrent }) => {
 }
 
 const activeStyle = {
-  color: "rgb(225, 225, 225)",
+  color: "rgb(68, 165, 123)",
 }
 
 export default function Navigation() {
@@ -18,7 +18,7 @@ export default function Navigation() {
 
   return (
     <>
-      <Navbar fixed="top" expand="md">
+      <Navbar collapseOnSelect expand="sm">
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleClick}>
           {onToggle ? (
             <CloseIcon baseLayer="icon" />
@@ -32,40 +32,50 @@ export default function Navigation() {
               <Link
                 activeStyle={activeStyle}
                 activeClassName="active"
-                className="nav-link underline"
+                className="nav-link"
                 to="/"
               >
                 HOME
               </Link>
             </li>
-            <li className="nav-item">
+            <li eventkey="2" className="nav-item">
               <Link
                 activeStyle={activeStyle}
                 activeClassName="active"
-                className="nav-link underline"
-                to="/portfolio"
-              >
-                PORTFOLIO
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeStyle={activeStyle}
-                activeClassName="active"
-                className="nav-link underline"
-                to="/contact"
-              >
-                SERVICES / CONTACT
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeStyle={activeStyle}
-                activeClassName="active"
-                className="nav-link underline"
+                className="nav-link"
                 to="/about"
               >
                 ABOUT
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeStyle={activeStyle}
+                activeClassName="active"
+                className="nav-link"
+                to="/services"
+              >
+                SERVICES
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeStyle={activeStyle}
+                activeClassName="active"
+                className="nav-link"
+                to="/gallery"
+              >
+                GALLERY
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeStyle={activeStyle}
+                activeClassName="active"
+                className="nav-link"
+                to="/contact"
+              >
+                CONTACT
               </Link>
             </li>
           </Nav>

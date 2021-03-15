@@ -1,10 +1,10 @@
 import React from "react"
 
-export default function CloseIcon(props) {
+export default function CloseIcon({ baseLayer }) {
   return (
     <svg
       version="1.1"
-      className={props.baseLayer}
+      className={baseLayer}
       x="0px"
       y="0px"
       viewBox="0 0 512 512"

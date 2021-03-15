@@ -1,0 +1,32 @@
+.services_img {
+  display: block;
+  margin: auto;
+}
+.services_icon {
+  float: right;
+  max-width: 100px;
+  margin-top: -3rem;
+  margin-right: -2rem;
+  .filler {
+    fill: rgb(255, 255, 255);
+  }
+}
+.card {
+  h3 {
+    @include didoni;
+    margin-bottom: 0rem;
+  }
+
+  .card_footer {
+    font-size: 1rem;
+    @include myriad;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    a {
+      color: $secondary;
+      &:hover {
+        color: darken($color: $secondary, $amount: 5%);
+      }
+    }
+  }
+}

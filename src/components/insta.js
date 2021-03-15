@@ -1,31 +1,32 @@
 import React from "react"
-import Image from "gatsby-image"
+import Img from "gatsby-image"
 import useInstagram from "../hooks/use-instagram"
 import LogoInstagram from "../images/logo_instagram"
 
-const Insta = () => {
+const Insta = ({ text }) => {
   const instaPhotos = useInstagram()
 
   return (
-    <>
-      <div className="mb-3">
-        <p>
+    <div className="col-12">
+      <div className="mt-3">
+        <span>
           <a
             className="insta_link"
             href={`https://instagram.com/glam_by_jam_nj`}
           >
-            <LogoInstagram baseLayer="insta_icon" color0="color0" /> See Jamie's
-            Latest Makeup Work!
+            <LogoInstagram baseLayer="insta_icon" color0="color0" /> {text}
+            {/* See Jamie's
+            Latest Makeup Work! */}
           </a>
-        </p>
+        </span>
       </div>
       <div
-        className="pb-5"
+        className="mb-5"
         style={{
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "space-between",
-          margin: "1rem -0.5rem",
+          margin: "0rem -0.5rem",
           padding: "0.5rem 0",
         }}
       >
@@ -42,20 +43,21 @@ const Insta = () => {
             }}
             key={photo.id}
           >
-            <Image
-              key={photo.id}
+            <Img
+              fluid={photo.localFile.childImageSharp.fluid}
+              alt={photo.caption}
               style={{
                 width: "100%",
                 marginTop: 0,
-                borderRadius: "7px",
+                borderTopLeftRadius: "27px",
+                borderTopRightRadius: "27px",
+                borderBottomRightRadius: "27px",
               }}
-              fluid={photo.fluid}
-              alt={photo.caption}
             />
           </a>
         ))}
       </div>
-    </>
+    </div>
   )
 }
 

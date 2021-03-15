@@ -18,6 +18,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/layout.js`),
+      },
+    },
+    {
       resolve: "gatsby-source-instagram",
       options: {
         username: `1627829848`,
@@ -29,6 +35,7 @@ module.exports = {
         useResolveUrlLoader: true,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -37,10 +44,10 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `rgb(223, 244, 234)`,
+        theme_color: `rgb(223, 244, 234)`,
         display: `minimal-ui`,
-        icon: `src/images/jamieLogo.png`,
+        icon: `src/images/glambyjam_fav.svg`,
       },
     },
     {

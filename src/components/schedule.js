@@ -124,13 +124,9 @@ export default class Schedule extends React.Component {
               onChange={this.handleRecaptcha}
             />
           </Form.Group>
-          <Form.Group>
-            <div className="mb-5 float-right">
-              <Button size="lg" variant="outline-light" type="submit">
-                Schedule Me!
-              </Button>
-            </div>
-          </Form.Group>
+          <Button block variant="outline-dark" type="submit">
+            <strong>LET'S SAVE YOUR DATE</strong>
+          </Button>
         </Form>
       </div>
     )

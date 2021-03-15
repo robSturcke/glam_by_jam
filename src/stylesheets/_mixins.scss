@@ -3,3 +3,28 @@
   margin: auto;
   max-width: 1280px;
 }
+
+@mixin small_wrap {
+  display: block;
+  margin: auto;
+  max-width: 800px;
+}
+
+@mixin bordered {
+  border-top-left-radius: 27px;
+  border-top-right-radius: 27px;
+  border-bottom-right-radius: 27px;
+}
+
+@mixin didoni {
+  font-family: didoni-urw, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin myriad {
+  font-family: myriad-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+}

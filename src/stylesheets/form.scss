@@ -1,9 +1,0 @@
-.schedule_form {
-  select.form-control,
-  input.form-control {
-    &:focus {
-      border-color: $secondary;
-      box-shadow: 0px 1px 1px $secondary inset, 0px 0px 8px $secondary_opac;
-    }
-  }
-}

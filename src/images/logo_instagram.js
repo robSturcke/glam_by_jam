@@ -1,8 +1,8 @@
 import React from "react"
 
-const LogoInstagram = props => (
+const LogoInstagram = ({ baseLayer, color1 }) => (
   <svg
-    className={props.baseLayer}
+    className={baseLayer}
     version="1.1"
     id="Layer_1"
     x="0px"
@@ -10,7 +10,7 @@ const LogoInstagram = props => (
     viewBox="0 0 512 512"
   >
     <path
-      className={props.color1}
+      className={color1}
       d="M349.3,69.3c51.5,0.2,93.2,41.9,93.3,93.3v186.7c-0.2,51.5-41.9,93.2-93.3,93.3H162.7c-51.5-0.2-93.2-41.9-93.3-93.3V162.7
 	c0.2-51.5,41.9-93.2,93.3-93.3H349.3 M349.3,32H162.7C90.8,32,32,90.8,32,162.7v186.7C32,421.2,90.8,480,162.7,480h186.7
 	c71.9,0,130.7-58.8,130.7-130.7V162.7C480,90.8,421.2,32,349.3,32z"

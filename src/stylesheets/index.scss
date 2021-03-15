@@ -1,46 +1,9 @@
-.cover_wrap {
-  background: $primary;
-  width: 100%;
-  border-bottom: 2px solid $secondary;
-}
-
-.intro {
-  h1,
-  h2,
-  h3 {
-    color: $alt;
+h1 {
+  span.myriad {
+    @include myriad;
   }
 
-  button {
-    font-weight: 700;
-    background-color: $secondary_opac;
-    &:hover,
-    &:active {
-      color: $secondary !important;
-    }
-  }
-}
-
-.about_link {
-  .about_icon {
-    margin: auto;
-    width: 30px;
-    .color0 {
-      fill: $alt;
-    }
-    .color1 {
-      fill: darken($color: $alt, $amount: 15%);
-    }
-  }
-
-  &:hover {
-    .about_icon {
-      .color0 {
-        fill: darken($color: $alt, $amount: 15%);
-      }
-      .color1 {
-        fill: darken($color: $alt, $amount: 25%);
-      }
-    }
+  span.lux {
+    @include didoni;
   }
 }

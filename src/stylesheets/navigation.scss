@@ -1,73 +1,27 @@
-header {
-  transition: background 0.25s ease-out;
-  .nav_wrap {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-    width: 100%;
-    height: 130px;
-    border-bottom: 2px solid $secondary;
-    background: $primary;
-
-    .logo {
-      background: rgba(255, 255, 255, 0.75);
-      border-radius: 50%;
-      border: 2px solid $secondary;
-      margin: 0.5rem auto 0 auto;
-      max-width: 100px;
+nav {
+  .navbar-toggler {
+    border: 1px solid $secondary;
+    &:active,
+    &:focus {
+      outline-color: $secondary;
     }
-
-    nav.navbar {
-      margin: auto;
-      max-width: 1080px;
-      margin: 4.5rem auto 0 auto;
-      background-color: $primary;
-
-      button.navbar-toggler {
-        border: 1px solid $secondary_opac;
-        &:active,
-        &:focus {
-          outline-color: $secondary;
-        }
-
-        .icon {
-          width: 32px;
-          fill: $alt;
-        }
-      }
-
-      .navbar-collapse {
-        .navbar-nav {
-          .nav-link.active {
-            color: lighten($color: $alt, $amount: 15%) !important;
-          }
-          .nav-link {
-            color: lighten($color: $secondary, $amount: 15%);
-            font-weight: 500;
-            letter-spacing: 0.03rem;
-
-            &:hover {
-              color: lighten($color: $alt, $amount: 15%);
-            }
-          }
-        }
-      }
+    .icon {
+      width: 35px;
+      height: 35px;
+      fill: $secondary;
     }
   }
-}
+  .navbar-collapse {
+    .navbar-nav {
+      .nav-item {
+        a.nav-link {
+          color: $alt;
+          font-weight: 600;
 
-@media only screen and (max-width: 768px) {
-  header {
-    .nav_wrap {
-      height: 100px;
-      .logo {
-        max-width: 90px;
-      }
-      nav.navbar {
-        margin: 4rem auto 0 auto;
-        border-bottom: 2px solid $secondary;
+          &:hover {
+            color: $secondary;
+          }
+        }
       }
     }
   }

@@ -1,13 +1,34 @@
+import { Link } from "gatsby"
 import React from "react"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
-import SubmissionSuccessBG from "../components/page_layouts/submission_success_bg"
+import SubmittedText from "../images/submitted_text.svg"
 
 const Submitted = () => (
-  <Layout>
+  <>
     <SEO title="Success! Your submission has been sent!" />
-    <SubmissionSuccessBG />
-  </Layout>
+    <div className="primary_wrap">
+      <div className="container-fluid">
+        <div className="content_wrap">
+          <div className="row">
+            <div className="col-12">
+              <div className="text-center py-4">
+                <img
+                  src={SubmittedText}
+                  width="450"
+                  className="img-fluid"
+                  alt="Submitted!"
+                />
+                <h1>Your submission has been sent!</h1>
+                <h4>
+                  <Link to="/">Back to Home</Link>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </>
 )
 
 export default Submitted

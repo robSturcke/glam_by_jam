@@ -1,19 +1,10 @@
-.blurb {
-  initial-letter: 2;
-  color: $alt;
+h2 {
+  font-family: didoni-urw, serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.03rem;
 }
 
-span.about {
-  button {
-    font-weight: 700;
-    &:hover {
-      color: $secondary;
-    }
-  }
-
-  .about_section_image {
-    * {
-      border-radius: 7px;
-    }
-  }
+.portrait {
+  @include bordered;
 }
