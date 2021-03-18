@@ -13,7 +13,7 @@ const PortImg8 = () => {
         <StaticImage
           src="port_img8.jpg"
           placeholder="blurred"
-          alt="Certification"
+          alt="Gallery Image"
           layout="fullWidth"
           className="gallery_img vert"
         />
@@ -24,7 +24,7 @@ const PortImg8 = () => {
           <StaticImage
             src="port_img8.jpg"
             placeholder="blurred"
-            alt="Certification"
+            alt="Gallery Image"
             layout="fullWidth"
           />
         </Modal.Body>
