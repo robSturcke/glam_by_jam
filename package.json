@@ -28,7 +28,8 @@
     "react-bootstrap": "^1.5.2",
     "react-dom": "^16.12.0",
     "react-google-recaptcha": "^2.1.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-reveal": "^1.2.2"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",

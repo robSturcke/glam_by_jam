@@ -12,6 +12,7 @@ import PortImg8 from "../images/portfolio/port_img8"
 import PortImg9 from "../images/portfolio/port_img9"
 import WaterColor from "../images/WatercolorLine.svg"
 import GalleryText from "../images/Gallery_Text.svg"
+import Zoom from "react-reveal/Zoom"
 
 const Portfolio = () => (
   <>
@@ -31,35 +32,37 @@ const Portfolio = () => (
               <img src={WaterColor} className="img-fluid watercolor" />
             </div>
           </div>
-          <div className="row">
-            <div className="col-sm-4">
-              <PortImg3 />
+          <Zoom cascade>
+            <div className="row">
+              <div className="col-sm-4">
+                <PortImg3 />
+              </div>
+              <div className="col-sm-4">
+                <PortImg9 />
+              </div>
+              <div className="col-sm-4">
+                <PortImg1 />
+              </div>
+              <div className="col-sm-4">
+                <PortImg2 />
+              </div>
+              <div className="col-sm-4">
+                <PortImg4 />
+              </div>
+              <div className="col-sm-4">
+                <PortImg6 />
+              </div>
+              <div className="col-sm-4">
+                <PortImg5 />
+              </div>
+              <div className="col-sm-4">
+                <PortImg8 />
+              </div>
+              <div className="col-sm-4">
+                <PortImg7 />
+              </div>
             </div>
-            <div className="col-sm-4">
-              <PortImg9 />
-            </div>
-            <div className="col-sm-4">
-              <PortImg1 />
-            </div>
-            <div className="col-sm-4">
-              <PortImg2 />
-            </div>
-            <div className="col-sm-4">
-              <PortImg4 />
-            </div>
-            <div className="col-sm-4">
-              <PortImg6 />
-            </div>
-            <div className="col-sm-4">
-              <PortImg5 />
-            </div>
-            <div className="col-sm-4">
-              <PortImg8 />
-            </div>
-            <div className="col-sm-4">
-              <PortImg7 />
-            </div>
-          </div>
+          </Zoom>
         </div>
       </div>
     </div>

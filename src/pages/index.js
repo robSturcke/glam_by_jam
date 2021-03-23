@@ -3,6 +3,7 @@ import Insta from "../components/insta"
 import SEO from "../components/seo"
 import HelloIntro from "../images/Hello_Text.svg"
 import HomeBrush from "../images/Home_WatercolorLineBrush.svg"
+import Fade from "react-reveal/Fade"
 
 const IndexPage = () => (
   <>
@@ -13,19 +14,23 @@ const IndexPage = () => (
           <div className="row">
             <div className="col-12">
               <div className="text-center py-3">
-                <img
-                  src={HelloIntro}
-                  width="400"
-                  className="img-fluid"
-                  alt="Hello!"
-                />
-                <h1>
-                  <span className="myriad">LUXURY MAKEUP FOR</span>
-                  <br />
-                  <span className="lux">
-                    BRIDAL, EVENTS, PHOTOGRAPHY {"&"} FILM
-                  </span>
-                </h1>
+                <Fade>
+                  <img
+                    src={HelloIntro}
+                    width="400"
+                    className="img-fluid"
+                    alt="Hello!"
+                  />
+                </Fade>
+                <Fade cascade>
+                  <h1>
+                    <span className="myriad">LUXURY MAKEUP FOR</span>
+                    <br />
+                    <span className="lux">
+                      BRIDAL, EVENTS, PHOTOGRAPHY {"&"} FILM
+                    </span>
+                  </h1>
+                </Fade>
                 <p>
                   With over a decade of experience under her belt, Jamie has
                   been helping clients create their perfect makeup vision come
