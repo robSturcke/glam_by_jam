@@ -18,12 +18,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-layout`,
-      options: {
-        component: require.resolve(`./src/components/layout.js`),
-      },
-    },
-    {
       resolve: "gatsby-source-instagram",
       options: {
         username: `1627829848`,
