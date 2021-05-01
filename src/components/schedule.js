@@ -1,6 +1,6 @@
 import React from "react"
 import { Form, Button } from "react-bootstrap"
-import { navigateTo } from "gatsby-link"
+import { navigate } from "gatsby-link"
 import Recaptcha from "react-google-recaptcha"
 
 function encode(data) {
@@ -36,7 +36,7 @@ export default class Schedule extends React.Component {
         ...this.state,
       }),
     })
-      .then(() => navigateTo(form.getAttribute("action")))
+      .then(() => navigate(form.getAttribute("action")))
       .catch(error => alert(error))
   }
 

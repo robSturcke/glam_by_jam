@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import Insta from "../components/insta"
+// import Insta from "../components/insta"
 import SEO from "../components/seo"
 import HelloIntro from "../images/Hello_Text.svg"
 import HomeBrush from "../images/Home_WatercolorLineBrush.svg"
@@ -54,10 +54,10 @@ const IndexPage = () => (
       <div className="container-fluid">
         <div className="content_wrap">
           <div className="row">
-            <Insta
+            {/* <Insta
               text="See Jamie's
             Latest Makeup Work!"
-            />
+            /> */}
           </div>
         </div>
       </div>
