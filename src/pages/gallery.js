@@ -1,6 +1,6 @@
 import React from "react"
 import SEO from "../components/seo"
-import Insta from "../components/insta"
+// import Insta from "../components/insta"
 import PortImg1 from "../images/portfolio/port_img1"
 import PortImg2 from "../images/portfolio/port_img2"
 import PortImg3 from "../images/portfolio/port_img3"
@@ -71,7 +71,7 @@ const Portfolio = () => (
       <div className="container-fluid">
         <div className="content_wrap">
           <div className="row">
-            <Insta text="See More of Jamie's Latest!" />
+            {/* <Insta text="See More of Jamie's Latest!" /> */}
           </div>
         </div>
       </div>

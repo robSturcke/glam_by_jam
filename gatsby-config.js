@@ -17,12 +17,12 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `1627829848`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-instagram`,
+    //   options: {
+    //     username: `1627829848`,
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-sass",
       options: {
