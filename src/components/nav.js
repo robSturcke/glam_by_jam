@@ -4,10 +4,6 @@ import { Link } from "gatsby"
 import CloseIcon from "../images/close_icon"
 import MenuIcon from "../images/menu_icon"
 
-const isActive = ({ isPartiallyCurrent }) => {
-  return isPartiallyCurrent ? { className: "active" } : null
-}
-
 const activeStyle = {
   color: "rgb(68, 165, 123)",
 }

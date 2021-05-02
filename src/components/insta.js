@@ -10,6 +10,7 @@ const Insta = ({ text }) => {
       allInstagramContent(limit: 27) {
         edges {
           node {
+            caption
             localImage {
               childImageSharp {
                 fixed(width: 120, height: 120, quality: 100) {
@@ -56,10 +57,10 @@ const Insta = ({ text }) => {
               margin: "0.5rem",
               maxWidth: "calc(33% - 1rem)",
               width: "120px",
-              transition: "200ms box-shadow linear",
             }}
           >
             <Img
+              alt={item.node.caption}
               fixed={item.node.localImage.childImageSharp.fixed}
               style={{
                 width: "100%",
@@ -67,6 +68,7 @@ const Insta = ({ text }) => {
                 borderTopLeftRadius: "27px",
                 borderTopRightRadius: "27px",
                 borderBottomRightRadius: "27px",
+                transition: "200ms box-shadow linear",
               }}
             />
           </div>

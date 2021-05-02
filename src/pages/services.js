@@ -19,6 +19,7 @@ const Services = () => (
             <div className="row">
               <div className="col-md-4">
                 <img
+                  alt="Services"
                   src={ServicesText}
                   width="300"
                   className="img-fluid services_img"

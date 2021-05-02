@@ -25,13 +25,18 @@ const Portfolio = () => (
             <div className="row">
               <div className="col-md-4">
                 <img
+                  alt="Gallery"
                   src={GalleryText}
                   width="350"
                   className="img-fluid services_img"
                 />
               </div>
               <div className="col-md-8">
-                <img src={WaterColor} className="img-fluid watercolor" />
+                <img
+                  src={WaterColor}
+                  className="img-fluid watercolor"
+                  alt="Water Color"
+                />
               </div>
             </div>
             <Zoom cascade>
